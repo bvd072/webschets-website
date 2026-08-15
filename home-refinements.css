@@ -779,3 +779,9 @@ html body.home-page main#top > section.website-problems .problem-head .kicker.se
 html body.home-page main#top > section.website-problems .problem-head .kicker.section-label::before {
   margin-right: 2px !important;
 }
+
+
+/* Eén versie terug: herstel de oorspronkelijke cursorafstand. */
+html body.home-page main#top > section.website-problems .problem-head .kicker.section-label::before {
+  margin-right: 8px !important;
+}
