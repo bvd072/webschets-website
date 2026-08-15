@@ -860,3 +860,9 @@ html body.home-page main#top > section.hero.shell .hero-copy > h1,
 html body.home-page main#top > section.hero.shell .hero-copy > h1 span {
   font-weight: 600 !important;
 }
+
+
+/* Grote sectietitels op de homepagina gebruiken een semibold hiërarchie. */
+body.home-page main#top > section h2 {
+  font-weight: 600 !important;
+}
