@@ -866,3 +866,10 @@ html body.home-page main#top > section.hero.shell .hero-copy > h1 span {
 body.home-page main#top > section h2 {
   font-weight: 600 !important;
 }
+
+
+/* Donkere navy voor de voorheen zwarte kopteksten in Over Webschets. */
+body.home-page #over-ons .section-head h2,
+body.home-page #over-ons .about-values h3 {
+  color: #101d36 !important;
+}
