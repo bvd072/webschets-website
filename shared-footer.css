@@ -209,3 +209,25 @@ html body footer.ws-footer::before {
     opacity: .11 !important;
   }
 }
+
+
+/* Watermerk: 20% kleiner, 10 procentpunt naar rechts en strak op de onderrand. */
+html body footer.ws-footer::before {
+  left: 14% !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: 0 !important;
+  font-size: clamp(94px, 13.6vw, 216px) !important;
+  transform: none !important;
+}
+
+@media (max-width: 620px) {
+  html body footer.ws-footer::before {
+    left: -2% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 0 !important;
+    font-size: clamp(75px, 24.8vw, 144px) !important;
+    transform: none !important;
+  }
+}
