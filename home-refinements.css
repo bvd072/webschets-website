@@ -584,3 +584,12 @@ body.home-page .ws-footer {
     min-height: 420px !important;
   }
 }
+
+
+/* Houd decoratie en animatie binnen de nieuwe sectiecontainers. */
+body.home-page main#top > section.shell:not(.hero),
+body.home-page main#top > section.about-webschets > .shell,
+body.home-page main#top > section.pricing > .shell {
+  overflow: hidden !important;
+  isolation: isolate !important;
+}
