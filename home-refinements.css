@@ -347,3 +347,46 @@ body.home-page main#top .home-branding .home-branding-copy > p.kicker {
   font-size: 11px !important;
   letter-spacing: 1.32px !important;
 }
+
+
+/* Eén vaste visuele hiërarchie voor ieder label boven een homepage-sectietitel. */
+body.home-page main#top .section-label,
+body.home-page main#top section .section-label,
+body.home-page main#top section div > .section-label {
+  display: block !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #2864ff !important;
+  font-family: Poppins, Arial, sans-serif !important;
+  font-size: 11px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 1.32px !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  white-space: normal !important;
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+@media (max-width: 600px) {
+  body.home-page main#top .section-label,
+  body.home-page main#top section .section-label,
+  body.home-page main#top section div > .section-label {
+    margin-bottom: 12px !important;
+    font-size: 10px !important;
+    letter-spacing: 1.2px !important;
+  }
+}
