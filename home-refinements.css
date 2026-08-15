@@ -475,3 +475,112 @@ html body.home-page .shared-site-header a.nav-cta {
     transform: translateY(-5px) scale(1.035) !important;
   }
 }
+
+
+/* Homepage container- en spacingsysteem. */
+body.home-page main#top {
+  --home-section-gap: 24px;
+  --home-section-pad: clamp(46px, 5vw, 64px);
+  --home-section-radius: 32px;
+  --home-section-bg: linear-gradient(145deg, rgba(255,255,255,.82), rgba(245,248,255,.62));
+  --home-section-border: rgba(255,255,255,.92);
+  --home-section-shadow: 0 24px 64px rgba(42,61,105,.075), inset 0 1px 0 rgba(255,255,255,.95);
+}
+
+body.home-page main#top > section {
+  box-sizing: border-box !important;
+  margin-top: 0 !important;
+  margin-bottom: var(--home-section-gap) !important;
+}
+
+body.home-page main#top > section.shell:not(.hero):not(.cta) {
+  width: min(1200px, calc(100% - 48px)) !important;
+  min-height: 0 !important;
+  padding: var(--home-section-pad) !important;
+  border: 1px solid var(--home-section-border) !important;
+  border-radius: var(--home-section-radius) !important;
+  background: var(--home-section-bg) !important;
+  box-shadow: var(--home-section-shadow) !important;
+}
+
+body.home-page main#top > section.hero {
+  margin-bottom: var(--home-section-gap) !important;
+}
+
+body.home-page main#top > section.about-webschets,
+body.home-page main#top > section.pricing {
+  width: 100% !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+body.home-page main#top > section.about-webschets > .shell,
+body.home-page main#top > section.pricing > .shell {
+  width: min(1200px, calc(100% - 48px)) !important;
+  margin: 0 auto !important;
+  padding: var(--home-section-pad) !important;
+  border: 1px solid var(--home-section-border) !important;
+  border-radius: var(--home-section-radius) !important;
+  background: var(--home-section-bg) !important;
+  box-shadow: var(--home-section-shadow) !important;
+}
+
+body.home-page main#top > section.cta {
+  width: min(1200px, calc(100% - 48px)) !important;
+  min-height: 480px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding: var(--home-section-pad) !important;
+  border: 1px solid rgba(255,255,255,.92) !important;
+  border-radius: var(--home-section-radius) !important;
+  box-shadow: 0 26px 68px rgba(63,74,170,.12), inset 0 1px 0 #fff !important;
+}
+
+body.home-page main#top > section.home-branding {
+  gap: clamp(28px, 4vw, 52px) !important;
+}
+
+body.home-page main#top > section.website-problems,
+body.home-page main#top > section.home-branding,
+body.home-page main#top > section.process,
+body.home-page main#top > section.testimonial-grid,
+body.home-page main#top > section.promise,
+body.home-page main#top > section.website-scan {
+  margin-top: 0 !important;
+}
+
+body.home-page main#top > section.usp-strip {
+  margin-top: 0 !important;
+  margin-bottom: var(--home-section-gap) !important;
+}
+
+body.home-page .ws-footer {
+  margin-top: var(--home-section-gap, 24px) !important;
+}
+
+@media (max-width: 900px) {
+  body.home-page main#top {
+    --home-section-gap: 18px;
+    --home-section-pad: clamp(32px, 6vw, 46px);
+    --home-section-radius: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  body.home-page main#top {
+    --home-section-gap: 14px;
+    --home-section-pad: 26px 20px;
+    --home-section-radius: 24px;
+  }
+
+  body.home-page main#top > section.shell:not(.hero):not(.cta),
+  body.home-page main#top > section.cta,
+  body.home-page main#top > section.about-webschets > .shell,
+  body.home-page main#top > section.pricing > .shell {
+    width: min(100% - 28px, 1200px) !important;
+  }
+
+  body.home-page main#top > section.cta {
+    min-height: 420px !important;
+  }
+}
