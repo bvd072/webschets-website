@@ -411,3 +411,12 @@ html body.home-page main#top > section.hero.shell .hero-copy > p.hero-eyebrow.se
     letter-spacing: 1.2px !important;
   }
 }
+
+
+/* Gevraagde vaste labelgrootte op ieder schermformaat. */
+html body.home-page main#top .section-label,
+html body.home-page main#top section .section-label,
+html body.home-page main#top section div > .section-label,
+html body.home-page main#top > section.hero.shell .hero-copy > p.hero-eyebrow.section-label {
+  font-size: 13px !important;
+}
