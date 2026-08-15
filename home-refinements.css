@@ -442,3 +442,36 @@ html body.home-page .shared-site-header a.nav-cta:hover {
 html body.home-page .shared-site-header a.nav-cta {
   font-size: 11px !important;
 }
+
+
+/* Maak Launch onmiskenbaar de hoofdkeuze binnen de pakketvergelijking. */
+@media (min-width: 901px) {
+  .home-page .pricing-simple-grid {
+    grid-template-columns: minmax(0, .82fr) minmax(0, 1.08fr) minmax(0, .82fr) !important;
+    gap: 24px !important;
+    align-items: center !important;
+  }
+
+  .home-page .pricing-simple-card:not(.is-featured) {
+    min-height: 470px !important;
+    padding: 24px !important;
+    transform: scale(.92) !important;
+    transform-origin: center !important;
+  }
+
+  .home-page .pricing-simple-card:not(.is-featured):hover {
+    transform: translateY(-4px) scale(.92) !important;
+  }
+
+  .home-page .pricing-simple-card.is-featured {
+    z-index: 2 !important;
+    min-height: 560px !important;
+    padding: 32px !important;
+    transform: scale(1.035) !important;
+    box-shadow: 0 30px 76px rgba(69, 61, 192, .22), inset 0 1px 0 #fff !important;
+  }
+
+  .home-page .pricing-simple-card.is-featured:hover {
+    transform: translateY(-5px) scale(1.035) !important;
+  }
+}
