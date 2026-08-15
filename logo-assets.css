@@ -7,11 +7,11 @@
 
 .shared-site-header .logo {
   flex: 0 0 auto;
-  width: 145px;
+  width: 159.5px;
 }
 
 .shared-site-header .site-logo-image {
-  width: 145px;
+  width: 159.5px;
 }
 
 footer .site-logo-image,
@@ -22,6 +22,6 @@ footer .site-logo-image,
 @media (max-width: 600px) {
   .shared-site-header .logo,
   .shared-site-header .site-logo-image {
-    width: 120px;
+    width: 132px;
   }
 }
