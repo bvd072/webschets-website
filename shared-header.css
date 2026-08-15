@@ -204,3 +204,20 @@ html body .shared-site-header a.nav-cta:hover > .nav-cta-icon {
   transform: translateX(2px) !important;
   background: rgba(255, 255, 255, .22) !important;
 }
+
+
+/* Centreer het grotere logo verticaal binnen de vaste bovenste headerregel. */
+@media (min-width: 901px) {
+  html body .shared-site-header > .logo {
+    height: 70px !important;
+    margin-top: 0 !important;
+    align-items: center !important;
+  }
+
+  html body .shared-site-header:has(.header-services:hover:not(.is-collapsed)) > .logo,
+  html body .shared-site-header:has(.header-services:focus-within) > .logo,
+  html body .shared-site-header:has(.header-services.is-open) > .logo {
+    height: 70px !important;
+    margin-top: 0 !important;
+  }
+}
