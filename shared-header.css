@@ -336,3 +336,53 @@ html body .shared-site-header a.nav-cta > .nav-cta-icon svg {
 html body .shared-site-header a.nav-cta:hover > .nav-cta-icon {
   background: transparent !important;
 }
+
+
+/* Uniforme header-CTA: dezelfde referentiematen op iedere pagina. */
+html body header#site-header.shared-site-header > a.nav-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: 43px !important;
+  min-height: 43px !important;
+  padding: 4px 15px 4px 18px !important;
+  border: 0 !important;
+  border-radius: 100px !important;
+  background: linear-gradient(120deg, #2864ff, #7137ff) !important;
+  color: #fff !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+}
+
+html body header#site-header.shared-site-header > a.nav-cta > .nav-cta-icon {
+  display: inline-grid !important;
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  flex: 0 0 18px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  place-items: center !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #fff !important;
+}
+
+html body header#site-header.shared-site-header > a.nav-cta > .nav-cta-icon svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: none !important;
+  stroke: #fff !important;
+  stroke-width: 1.7 !important;
+}
+
+html body header#site-header.shared-site-header > a.nav-cta:hover > .nav-cta-icon {
+  background: transparent !important;
+}
