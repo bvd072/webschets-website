@@ -641,3 +641,12 @@ html body main > section.unified-page-hero > .unified-trust-bar > div + div {
     font-size: 12px !important;
   }
 }
+
+
+@media (min-width: 901px) {
+  html body main > section.unified-page-hero > .unified-trust-bar,
+  html body.services-page main > section.page-hero.services-overview-hero.unified-page-hero > .unified-trust-bar {
+    width: min(calc(100vw - 51px), 1248px) !important;
+    min-height: 77.34px !important;
+  }
+}
