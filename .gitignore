@@ -1,0 +1,7 @@
+# Lokale en tijdelijke bestanden
+tmp/
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+

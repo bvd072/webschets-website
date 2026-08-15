@@ -1,0 +1,288 @@
+/* Homepage typography system — scoped to .home-page only. */
+.home-page {
+  --home-type-hero: clamp(42px, 5.4vw, 72px);
+  --home-type-section: clamp(34px, 4.2vw, 56px);
+  --home-type-subsection: clamp(27px, 3vw, 40px);
+  --home-type-card: clamp(18px, 1.7vw, 22px);
+  --home-type-intro: clamp(16px, 1.35vw, 18px);
+  --home-type-body: 16px;
+  --home-type-card-body: 14px;
+  --home-type-button: 14px;
+  --home-type-label: 11px;
+  --home-type-small: 12px;
+}
+
+.home-page,
+.home-page :is(header, main, footer, button, input, select, textarea) {
+  font-family: "Poppins", Arial, sans-serif !important;
+}
+
+/* Header and actions */
+.home-page .shared-site-header nav a {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+}
+
+.home-page .shared-site-header nav a.active { font-weight: 500 !important; }
+
+.home-page .shared-site-header .nav-cta,
+.home-page main :is(.button, button[type="submit"]) {
+  font-size: var(--home-type-button) !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+}
+
+.home-page main :is(.text-link, .concept-showcase-all, .home-build-hosting-link, .pricing-simple-cta) {
+  font-size: var(--home-type-button) !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+}
+
+/* Hero */
+html body.home-page main#top > section.hero.shell .hero-copy h1 {
+  font-size: var(--home-type-hero) !important;
+  font-weight: 700 !important;
+  line-height: .98 !important;
+  letter-spacing: -.055em !important;
+}
+
+.home-page main > .hero .hero-copy > p:not(.hero-eyebrow) {
+  font-size: var(--home-type-intro) !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+
+html body.home-page main#top > section.hero.shell .hero-copy > p.hero-eyebrow {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+  letter-spacing: .14em !important;
+}
+
+.home-page .hero-trust-bar strong {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+}
+
+.home-page .hero-trust-bar small {
+  font-size: var(--home-type-small) !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+}
+
+.home-page .hero-trust-mark {
+  font-size: var(--home-type-small) !important;
+  font-weight: 600 !important;
+}
+
+/* Reusable section hierarchy */
+.home-page main :is(
+  .concept-showcase-head h2,
+  .home-build-hosting-copy h2,
+  .usp-section-heading h2,
+  .problem-head h2,
+  .home-branding-copy h2,
+  .about-webschets .section-head h2,
+  .process .section-head h2,
+  .testimonial-heading h2,
+  .pricing .section-head h2,
+  .promise > h2,
+  .cta h2,
+  .website-scan h2
+) {
+  font-size: var(--home-type-section) !important;
+  font-weight: 700 !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.05em !important;
+}
+
+.home-page main :is(
+  .home-build-hosting-intro,
+  .usp-section-heading > p,
+  .problem-head > p,
+  .home-branding-intro,
+  .about-webschets .section-head > p,
+  .process .section-head > p,
+  .promise .section-intro,
+  .website-scan .scan-copy > p
+) {
+  font-size: var(--home-type-body) !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+}
+
+.home-page main :is(.kicker, .best, .about-label, .pricing-simple-label, .pricing-simple-popular) {
+  font-size: var(--home-type-label) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: .12em !important;
+}
+
+/* Card typography */
+.home-page main article p {
+  font-size: var(--home-type-card-body) !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+
+.home-page main article small {
+  font-size: var(--home-type-small) !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+}
+
+.home-page .usp-card-grid h3,
+.home-page .problem-grid h3,
+.home-page .about-values h3,
+.home-page .feature-grid h3,
+.home-page .scan-advice h3 {
+  font-size: var(--home-type-card) !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -.025em !important;
+}
+
+.home-page .about-main h3 {
+  font-size: var(--home-type-subsection) !important;
+  font-weight: 600 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -.035em !important;
+}
+
+.home-page .about-main p,
+.home-page .testimonial-grid blockquote {
+  font-size: var(--home-type-body) !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+}
+
+.home-page .testimonial-owner {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.home-page .concept-showcase-meta strong {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+}
+
+.home-page .concept-showcase-meta > span {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+}
+
+.home-page :is(.home-build-hosting-points, .home-branding-benefits) strong {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+}
+
+.home-page :is(.home-build-hosting-points, .home-branding-benefits) span {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+}
+
+/* Process and prices */
+.home-page .timeline .day b {
+  font-size: var(--home-type-label) !important;
+  font-weight: 600 !important;
+}
+
+.home-page .timeline .day > span {
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+}
+
+.home-page .timeline .day :is(small, em),
+.home-page .timeline-detail p {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+.home-page .timeline-detail > span {
+  font-size: var(--home-type-small) !important;
+  font-weight: 600 !important;
+}
+
+.home-page .pricing-simple-card h3 {
+  font-size: clamp(26px, 2.3vw, 30px) !important;
+  font-weight: 600 !important;
+  line-height: 1.15 !important;
+}
+
+.home-page .pricing-simple-card header p,
+.home-page .pricing-simple-card li {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+.home-page .pricing-simple-price strong {
+  font-size: clamp(36px, 3.6vw, 44px) !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+.home-page .pricing-simple-price :is(small, span),
+.home-page .pricing-simple-note {
+  font-size: var(--home-type-small) !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+}
+
+/* Final CTA, form and footer */
+.home-page .cta > p { font-size: var(--home-type-body) !important; font-weight: 400 !important; line-height: 1.6 !important; }
+.home-page .cta > p:first-of-type { font-size: var(--home-type-label) !important; font-weight: 600 !important; letter-spacing: .14em !important; }
+.home-page .cta > small { font-size: var(--home-type-small) !important; font-weight: 400 !important; }
+
+.home-page .scan-form label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.home-page .scan-form input {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.home-page footer :is(a, p, span) {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+}
+
+.home-page footer :is(b, strong) { font-size: 13px !important; font-weight: 600 !important; }
+.home-page footer .button { font-size: var(--home-type-button) !important; font-weight: 600 !important; }
+.home-page footer > small { font-size: var(--home-type-small) !important; font-weight: 400 !important; }
+
+@media (max-width: 900px) {
+  .home-page {
+    --home-type-hero: clamp(44px, 7vw, 58px);
+    --home-type-section: clamp(34px, 5.5vw, 46px);
+  }
+}
+
+@media (max-width: 600px) {
+  .home-page {
+    --home-type-hero: clamp(40px, 11vw, 46px);
+    --home-type-section: clamp(31px, 9vw, 38px);
+    --home-type-subsection: 28px;
+    --home-type-card: 20px;
+    --home-type-intro: 16px;
+    --home-type-body: 15px;
+    --home-type-card-body: 14px;
+    --home-type-button: 14px;
+    --home-type-label: 10px;
+  }
+
+  .home-page .shared-site-header nav a { font-size: 15px !important; }
+  .home-page .hero-trust-bar small { font-size: 11px !important; }
+  .home-page .pricing-simple-price strong { font-size: 36px !important; }
+}

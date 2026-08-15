@@ -1,0 +1,24 @@
+Options -MultiViews
+RewriteEngine On
+
+# Verwijder index.html uit de zichtbare URL.
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[\s?]) [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# De bestaande werk-pagina heeft voortaan de duidelijke route /concepten.
+RewriteCond %{THE_REQUEST} \s/+werk\.html(?:[\s?]) [NC]
+RewriteRule ^werk\.html$ /concepten [R=301,L,NE]
+RewriteRule ^werk/?$ /concepten [R=301,L]
+
+# Stuur directe .html-verzoeken door naar de nette URL.
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]) [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
+
+# Interne koppeling voor de Concepten-pagina.
+RewriteRule ^concepten/?$ werk.html [L]
+
+# Laad bestaande HTML-bestanden zonder dat .html zichtbaar is.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]

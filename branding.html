@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Branding door Webschets: een duidelijke positionering, herkenbare visuele identiteit en praktisch merksysteem dat overal consistent werkt.">
+  <title>Branding — Webschets</title>
+  <link rel="icon" href="assets/webschets-favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css?v=35">
+  <link rel="stylesheet" href="shared-header.css?v=20">
+  <link rel="stylesheet" href="typography.css">
+  <link rel="stylesheet" href="logo-assets.css">
+  <link rel="stylesheet" href="shared-footer.css?v=3">
+  <link rel="stylesheet" href="webdesign.css?v=47">
+  <link rel="stylesheet" href="branding.css?v=2">
+  <link rel="stylesheet" href="card-title-weight.css?v=1">
+  <link rel="stylesheet" href="shared-design-system.css?v=1">
+  <style id="brand-foundation-blueprint-styles">
+    .brand-foundation-blueprint {
+      position: relative;
+      min-height: 520px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,.92);
+      border-radius: 34px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: rgba(255,255,255,.52);
+      box-shadow: 0 30px 80px rgba(48,72,132,.13), inset 0 1px 0 rgba(255,255,255,.9);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      isolation: isolate;
+    }
+    .brand-foundation-blueprint::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background-image:
+        linear-gradient(rgba(45,103,255,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45,103,255,.055) 1px, transparent 1px);
+      background-size: 38px 38px;
+      mask-image: linear-gradient(to bottom right, #000, transparent 88%);
+    }
+    .brand-foundation-blueprint::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      right: -150px;
+      bottom: -190px;
+      z-index: -1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(112,72,255,.24), rgba(47,109,255,.1) 46%, transparent 70%);
+      filter: blur(8px);
+    }
+    .brand-blueprint-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+    .brand-blueprint-kicker {
+      color: #286cff;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+    }
+    .brand-blueprint-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border: 1px solid rgba(42,108,255,.12);
+      border-radius: 999px;
+      background: rgba(255,255,255,.72);
+      color: #66748d;
+      font-size: .66rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      white-space: nowrap;
+    }
+    .brand-blueprint-status::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #54d99b;
+      box-shadow: 0 0 0 5px rgba(84,217,155,.13);
+    }
+    .brand-blueprint-title {
+      max-width: 520px;
+      margin: 0 0 22px;
+      color: #132541;
+      font-size: clamp(1.55rem, 2.2vw, 2.15rem);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -.035em;
+    }
+    .brand-blueprint-list {
+      display: grid;
+      gap: 10px;
+    }
+    .brand-blueprint-row {
+      display: grid;
+      grid-template-columns: 50px minmax(0,1fr);
+      align-items: center;
+      gap: 15px;
+      padding: 13px 15px;
+      border: 1px solid rgba(255,255,255,.94);
+      border-radius: 18px;
+      background: rgba(255,255,255,.62);
+      box-shadow: 0 12px 30px rgba(57,79,133,.06);
+      transition: transform .3s ease, background .3s ease, box-shadow .3s ease;
+    }
+    .brand-blueprint-row:hover {
+      transform: translateX(5px);
+      background: rgba(255,255,255,.88);
+      box-shadow: 0 16px 35px rgba(57,79,133,.1);
+    }
+    .brand-blueprint-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      color: #356cff;
+      background: linear-gradient(145deg, rgba(216,232,255,.95), rgba(233,222,255,.88));
+      border: 1px solid rgba(255,255,255,.9);
+    }
+    .brand-blueprint-icon svg { width: 23px; height: 23px; }
+    .brand-blueprint-row strong {
+      display: block;
+      margin-bottom: 3px;
+      color: #172943;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .brand-blueprint-row p {
+      margin: 0;
+      color: #71809a;
+      font-size: .82rem;
+      line-height: 1.45;
+    }
+    .brand-blueprint-result {
+      margin-top: 12px;
+      padding: 17px 19px;
+      border-radius: 20px;
+      color: #fff;
+      background: linear-gradient(120deg, #286cff 0%, #554cff 54%, #7444f4 100%);
+      box-shadow: 0 18px 38px rgba(65,74,238,.24);
+    }
+    .brand-blueprint-result span {
+      display: block;
+      margin-bottom: 5px;
+      font-size: .64rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      opacity: .72;
+    }
+    .brand-blueprint-result strong {
+      display: block;
+      max-width: 510px;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    @media (max-width: 900px) {
+      .brand-foundation-blueprint { min-height: auto; padding: 22px; border-radius: 26px; }
+      .brand-blueprint-head { align-items: flex-start; }
+    }
+    @media (max-width: 520px) {
+      .brand-blueprint-status { display: none; }
+      .brand-blueprint-row { grid-template-columns: 44px minmax(0,1fr); padding: 12px; }
+      .brand-blueprint-icon { width: 44px; height: 44px; border-radius: 13px; }
+    }
+  </style>
+  <style id="brand-positioning-compact-fix">
+    /* Compacte positioneringssectie */
+    .brand-positioning {
+      width: min(calc(100% - 52px), 1120px) !important;
+      min-height: 0 !important;
+      margin-inline: auto !important;
+      padding-block: clamp(64px, 7vw, 92px) !important;
+    }
+
+    .brand-positioning > .shell,
+    .brand-positioning .shell {
+      width: 100% !important;
+      max-width: 1060px !important;
+      margin-inline: auto !important;
+    }
+
+    .brand-positioning .wd-eyebrow {
+      display: inline-flex !important;
+      width: max-content !important;
+      max-width: 100% !important;
+      align-items: center !important;
+      padding: 8px 13px !important;
+      border-radius: 999px !important;
+      font-size: 10px !important;
+      line-height: 1 !important;
+      letter-spacing: .14em !important;
+    }
+
+    .brand-positioning h2 {
+      margin-top: clamp(28px, 3vw, 42px) !important;
+    }
+
+    @media (max-width: 768px) {
+      .brand-positioning {
+        width: min(calc(100% - 28px), 1120px) !important;
+        padding-block: 54px !important;
+      }
+
+      .brand-positioning .wd-eyebrow {
+        padding: 7px 11px !important;
+        font-size: 9px !important;
+      }
+    }
+  </style>
+<style id="branding-v2-styles">
+  body#top > main > section:not(:first-child):not(.brand-v2){display:none!important}
+  .brand-v2{position:relative;max-width:1440px;margin:0 auto;padding:clamp(76px,8vw,124px) clamp(26px,4vw,64px);color:#12213d}
+  .brand-v2 + .brand-v2{padding-top:clamp(48px,6vw,92px)}
+  .brand-v2-tag{display:inline-flex;padding:10px 15px;border-radius:999px;background:rgba(48,103,255,.08);color:#2765ff;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+  .brand-v2 h2{margin:22px 0 20px;font-size:clamp(42px,5vw,76px);line-height:.98;letter-spacing:-.055em;font-weight:600}
+  .brand-v2 h2 span{color:#2d68ff}.brand-v2 p{font-size:clamp(17px,1.35vw,21px);line-height:1.65;color:#71809a}
+  .brand-v2-grid{display:grid;grid-template-columns:minmax(0,.86fr) minmax(520px,1.14fr);gap:clamp(50px,7vw,112px);align-items:center}
+  .brand-v2-copy{max-width:620px}.brand-v2-points{display:grid;gap:18px;margin-top:34px}
+  .brand-v2-point{display:grid;grid-template-columns:12px 1fr;gap:14px;align-items:start}.brand-v2-point i{width:9px;height:9px;margin-top:9px;border-radius:50%;background:#52d99a;box-shadow:0 0 0 7px rgba(82,217,154,.12)}
+  .brand-v2-point strong{display:block;margin-bottom:4px;font-size:17px;font-weight:600}.brand-v2-point span{color:#7a879d;line-height:1.55}
+  .brand-system{min-height:560px;padding:36px;border:1px solid rgba(72,106,170,.13);border-radius:38px;background:linear-gradient(135deg,rgba(255,255,255,.76),rgba(237,242,255,.52));box-shadow:0 28px 70px rgba(44,64,110,.12);backdrop-filter:blur(18px);overflow:hidden}
+  .brand-system-head{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#6f7e98}
+  .brand-system-mark{display:grid;place-items:center;min-height:270px}.brand-system-logo{font-size:clamp(54px,6vw,92px);font-weight:600;letter-spacing:-.07em;color:#12213d}.brand-system-logo b{color:#2d68ff}.brand-system-logo em{color:#ff6d5f;font-style:normal}
+  .brand-system-tools{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.brand-tool{padding:22px;border-radius:24px;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.9)}
+  .brand-tool small{display:block;margin-bottom:15px;color:#8190a8;font-size:11px;letter-spacing:.13em;text-transform:uppercase}.brand-swatches{display:flex;gap:10px}.brand-swatches i{width:44px;height:44px;border-radius:14px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.05)}
+  .brand-type{display:flex;align-items:end;gap:10px;color:#12213d}.brand-type b:nth-child(1){font-size:36px}.brand-type b:nth-child(2){font-size:25px}.brand-type b:nth-child(3){font-size:17px}
+  .brand-vehicle{padding-top:42px}.brand-vehicle-stage{position:relative;min-height:550px;display:grid;place-items:center;background:radial-gradient(circle at 65% 48%,rgba(91,70,255,.14),transparent 42%),linear-gradient(135deg,rgba(232,241,255,.55),rgba(255,255,255,.16));border-radius:44px;overflow:hidden}
+  .brand-vehicle-stage:before{content:"";position:absolute;inset:10% 6%;background-image:linear-gradient(rgba(55,103,210,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(55,103,210,.055) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
+  .brand-van{position:relative;width:min(92%,880px);filter:drop-shadow(0 28px 24px rgba(22,35,67,.22));transform:translateY(12px)}
+  .brand-vehicle-note{position:absolute;right:5%;bottom:7%;padding:16px 20px;border:1px solid rgba(255,255,255,.9);border-radius:18px;background:rgba(255,255,255,.75);backdrop-filter:blur(14px);box-shadow:0 16px 38px rgba(38,55,96,.12)}
+  .brand-vehicle-note strong{display:block;font-weight:600}.brand-vehicle-note span{font-size:13px;color:#8490a5}
+  .brand-touch-head{display:grid;grid-template-columns:1fr .75fr;gap:60px;align-items:end;margin-bottom:48px}.brand-touch-head p{margin:0 0 8px}
+  .brand-touch-track{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(70,100,155,.17);border-bottom:1px solid rgba(70,100,155,.17)}
+  .brand-touch{position:relative;padding:36px 28px 38px;min-height:230px}.brand-touch+.brand-touch{border-left:1px solid rgba(70,100,155,.17)}
+  .brand-touch-icon{width:52px;height:52px;display:grid;place-items:center;margin-bottom:34px;border-radius:17px;background:linear-gradient(145deg,#edf3ff,#eee9ff);color:#356cff;font-size:22px}
+  .brand-touch h3{margin:0 0 10px;font-size:22px;font-weight:600}.brand-touch p{margin:0;font-size:15px;line-height:1.55}
+  .brand-v2-cta{padding-top:40px;padding-bottom:100px}.brand-v2-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:40px;padding:clamp(38px,5vw,70px);border-radius:38px;background:linear-gradient(120deg,#246cff,#7242ff);color:#fff;box-shadow:0 28px 70px rgba(62,80,220,.24)}
+  .brand-v2-cta h2{max-width:780px;margin:0;color:#fff;font-size:clamp(38px,4.3vw,64px)}.brand-v2-cta a{flex:0 0 auto;display:inline-flex;align-items:center;gap:20px;padding:18px 22px 18px 26px;border-radius:999px;background:#fff;color:#172541;text-decoration:none;font-weight:600}.brand-v2-cta a i{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#ff6d5f;color:#fff;font-style:normal}
+  @media(max-width:900px){.brand-v2-grid,.brand-touch-head{grid-template-columns:1fr}.brand-v2-grid{gap:44px}.brand-system{min-height:auto}.brand-touch-track{grid-template-columns:1fr 1fr}.brand-touch:nth-child(3){border-left:0}.brand-touch:nth-child(n+3){border-top:1px solid rgba(70,100,155,.17)}.brand-v2-cta-inner{align-items:flex-start;flex-direction:column}}
+  @media(max-width:600px){.brand-v2{padding-left:20px;padding-right:20px}.brand-system{padding:24px;border-radius:28px}.brand-system-tools{grid-template-columns:1fr}.brand-vehicle-stage{min-height:370px;border-radius:28px}.brand-touch-track{grid-template-columns:1fr}.brand-touch+.brand-touch{border-left:0;border-top:1px solid rgba(70,100,155,.17)}.brand-v2-cta-inner{border-radius:28px}}
+</style>
+</head>
+<body class="webdesign-page branding-page" id="top">
+  <div class="noise"></div>
+  <header class="nav shell shared-site-header" id="site-header">
+    <a class="logo" href="index.html" aria-label="Webschets home"><img class="site-logo-image" src="assets/webschets-logo.svg" alt="Webschets"></a>
+    <nav aria-label="Hoofdnavigatie"><a href="index.html">Home</a><a class="active" href="diensten.html">Diensten</a><a href="werk.html">Concepten</a><a href="werkwijze.html">Werkwijze</a><a href="contact.html">Contact</a></nav>
+      <a class="nav-cta" href="contact.html">Start jouw aanvraag <span class="nav-cta-icon" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m7 5 5 5-5 5"/></svg></span></a>
+    <button class="menu" type="button" aria-label="Menu openen" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="wd-service-intro shell brand-service-intro" aria-labelledby="branding-title">
+      <div class="wd-service-intro-top"><span class="wd-eyebrow">Branding door Webschets</span><p>Strategie · Identiteit · Huisstijl · Toepassing</p></div>
+      <h1 id="branding-title">Branding<span>.</span></h1>
+      <div class="wd-service-intro-grid">
+        <div class="wd-service-intro-copy">
+          <h2>Een merk dat <span>duidelijk vertelt waarom jij anders bent.</span></h2>
+          <div class="wd-service-explanation">
+            <p><strong>Helder gepositioneerd.</strong><span>We scherpen aan voor wie je er bent, wat je belooft en waarom klanten voor jou kiezen.</span></p>
+            <p><strong>Direct herkenbaar.</strong><span>Logo, kleur, typografie en beeldtaal vormen samen één onderscheidende uitstraling.</span></p>
+            <p><strong>Overal consistent.</strong><span>Het merk werkt herkenbaar door op je website, social media, drukwerk en andere middelen.</span></p>
+          </div>
+        </div>
+        <div class="wd-service-intro-copy wd-service-intro-copy--second">
+          <span class="wd-column-label">Wat we voor je ontwerpen</span>
+          <h2>Een identiteit waarin <span>strategie en uitstraling</span> elkaar versterken.</h2>
+          <div class="wd-service-explanation">
+            <p><strong>Merkfundament.</strong><span>Een heldere kern met positionering, merkbelofte, persoonlijkheid en doelgroep.</span></p>
+            <p><strong>Visuele identiteit.</strong><span>Een flexibel systeem van logo, kleuren, lettertypen, vormen en beeldgebruik.</span></p>
+            <p><strong>Praktische richtlijnen.</strong><span>Voorbeelden en afspraken waarmee jij en partners het merk correct kunnen toepassen.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-foundation shell" aria-labelledby="brand-foundation-title">
+      <div class="brand-foundation-copy"><span class="wd-eyebrow">Eerst de kern</span><h2 id="brand-foundation-title">Geen vorm zonder verhaal.<br><em>Geen verhaal zonder richting.</em></h2><p>Een sterk merk ontstaat niet vanuit een favoriete kleur of losse trend. We beginnen bij de betekenis: welke plek wil je innemen, welke verwachting wil je opbouwen en welk gevoel moet blijven hangen?</p></div>
+      <div class="brand-compass" aria-label="Onderdelen van het merkfundament"><div class="brand-compass-core"><span>MERK</span><strong>KERN</strong></div><article style="--x:50%;--y:2%"><i>01</i><b>Doelgroep</b><small>Voor wie ben je relevant?</small></article><article style="--x:91%;--y:48%"><i>02</i><b>Belofte</b><small>Wat mogen klanten verwachten?</small></article><article style="--x:50%;--y:91%"><i>03</i><b>Karakter</b><small>Hoe klinkt en voelt je merk?</small></article><article style="--x:8%;--y:48%"><i>04</i><b>Positie</b><small>Waarom kiezen mensen jou?</small></article></div>
+    </section>
+
+    <section class="brand-positioning" aria-labelledby="brand-positioning-title">
+      <div class="shell"><div class="brand-positioning-heading"><span class="wd-eyebrow">Positionering die keuzes stuurt</span><h2 id="brand-positioning-title">Van een breed verhaal naar<br><em>één scherpe merkrichting.</em></h2><p>We brengen aanbod, doelgroep en concurrentie samen tot een kern die richting geeft aan taal, beeld en commerciële communicatie.</p></div><div class="brand-positioning-flow"><article><i>01</i><small>WAARDE</small><h3>Wat lever je werkelijk?</h3><p>Niet alleen je dienst, maar het resultaat en gevoel dat je klant zoekt.</p></article><span>→</span><article><i>02</i><small>ONDERSCHEID</small><h3>Waarom juist jouw merk?</h3><p>Een geloofwaardig verschil dat relevant is voor de juiste doelgroep.</p></article><span>→</span><article><i>03</i><small>POSITIE</small><h3>De plek die je wilt bezitten.</h3><p>Een compacte merkgedachte die alle communicatie herkenbaar maakt.</p></article></div></div>
+    </section>
+
+    <section class="brand-system shell" aria-labelledby="brand-system-title">
+      <div class="brand-system-heading"><span class="wd-eyebrow">Een visueel systeem</span><h2 id="brand-system-title">Herkenbaar zonder iedere uiting hetzelfde te maken.</h2><p>Een identiteit moet voldoende vastigheid geven voor herkenning én voldoende flexibiliteit om te blijven werken in verschillende formaten en situaties.</p></div>
+      <div class="brand-system-grid"><article class="brand-logo-card"><span>LOGOSYSTEEM</span><div class="brand-mark"><i></i><i></i><strong>W</strong></div><h3>Eén herkenbaar teken.<br>Meerdere slimme varianten.</h3></article><article class="brand-color-card"><span>KLEURPALET</span><div><i>#2864FF</i><i>#7545F5</i><i>#FF715E</i><i>#152944</i></div><h3>Kleur met een duidelijke functie.</h3></article><article class="brand-type-card"><span>TYPOGRAFIE</span><div><strong>Aa</strong><p><b>Duidelijke koppen</b><small>Rustige, leesbare teksten</small></p></div><h3>Een stem die je ook kunt zien.</h3></article><article class="brand-language-card"><span>VORM &amp; BEELDTAAL</span><div><i></i><i></i><i></i><i></i></div><h3>Eigen bouwstenen voor iedere uiting.</h3></article></div>
+    </section>
+
+    <section class="brand-touchpoints shell" aria-labelledby="brand-touchpoints-title">
+      <div class="brand-touchpoints-copy"><span class="wd-eyebrow">Eén merk, meerdere momenten</span><h2 id="brand-touchpoints-title">Consistent van eerste indruk tot vaste klant.</h2><p>Klanten ervaren je merk niet op één plek. Daarom ontwerpen we de identiteit als een systeem dat digitaal en fysiek dezelfde kwaliteit uitstraalt.</p><div class="brand-touchpoint-list"><span><i>01</i>Website &amp; digitale interfaces</span><span><i>02</i>Social media &amp; campagnes</span><span><i>03</i>Presentaties &amp; documenten</span><span><i>04</i>Drukwerk &amp; signing</span></div></div>
+      <div class="brand-touchpoint-stage"><article class="brand-browser"><small>WEBSITE</small><b>Een merkervaring<br>die direct klopt.</b><i></i><i></i><button>Ontdek meer ↗</button></article><article class="brand-social"><small>SOCIAL</small><strong>Blijf<br>herkenbaar.</strong><i>W.</i></article><article class="brand-card"><small>PRINT</small><strong>webschets.</strong><span>branding &amp; webdesign</span></article></div>
+    </section>
+
+    <section class="brand-guide" aria-labelledby="brand-guide-title">
+      <div class="shell"><div class="brand-guide-preview" aria-label="Voorbeeld van een digitale brandguide"><div class="brand-guide-bar"><i></i><i></i><i></i><b>Brandguide / Visuele identiteit</b></div><div class="brand-guide-body"><aside><span class="active">01 Merkfundament</span><span>02 Logo</span><span>03 Kleur</span><span>04 Typografie</span><span>05 Beeldtaal</span></aside><div><small>VISUELE IDENTITEIT</small><h3>Duidelijk.<br><em>Eigen.</em> Consistent.</h3><div class="brand-guide-colors"><i></i><i></i><i></i></div><p>Richtlijnen die keuzes eenvoudiger maken en kwaliteit bewaken.</p></div></div></div><div class="brand-guide-copy"><span class="wd-eyebrow">Praktisch vastgelegd</span><h2 id="brand-guide-title">Een brandguide die daadwerkelijk gebruikt wordt.</h2><p>Geen dik document vol abstracte regels, maar een overzichtelijke handleiding met concrete voorbeelden. Zo weet iedereen hoe het merk correct wordt toegepast.</p><ul><li>Logo-varianten en veilige ruimte</li><li>Kleurcodes voor scherm en drukwerk</li><li>Typografische hiërarchie</li><li>Voorbeelden van goed en fout gebruik</li></ul></div></div>
+    </section>
+
+    <section class="brand-deliverables shell" aria-labelledby="brand-deliverables-title">
+      <div class="brand-deliverables-heading"><span class="wd-eyebrow">Klaar voor dagelijks gebruik</span><h2 id="brand-deliverables-title">Alles netjes opgeleverd.<br><em>Voor ieder relevant formaat.</em></h2><p>Je ontvangt een overzichtelijke map met richtlijnen, bronbestanden en exportformaten voor digitale en fysieke toepassingen.</p></div><div class="brand-file-grid"><article><i>SVG</i><h3>Schaalbaar</h3><p>Logo’s voor web, signing en groot formaat.</p></article><article><i>PNG</i><h3>Transparant</h3><p>Direct bruikbaar in digitale uitingen.</p></article><article><i>PDF</i><h3>Drukwerk</h3><p>Professionele bestanden voor leveranciers.</p></article><article><i>RGB</i><h3>Digitaal</h3><p>Correcte kleuren voor schermgebruik.</p></article><article><i>CMYK</i><h3>Print</h3><p>Passende kleurwaarden voor drukwerk.</p></article><article><i>GUIDE</i><h3>Richtlijnen</h3><p>Alle afspraken en voorbeelden bij elkaar.</p></article></div>
+    </section>
+
+    <section class="brand-fit shell" aria-labelledby="brand-fit-title"><div><span class="wd-eyebrow">Past branding bij jouw situatie?</span><h2 id="brand-fit-title">Voor merken die professioneler willen groeien.</h2></div><div class="brand-fit-grid"><article><i>01</i><h3>Nieuwe onderneming</h3><p>Je wilt vanaf de start een geloofwaardig en herkenbaar merk neerzetten.</p></article><article><i>02</i><h3>Verouderde uitstraling</h3><p>Je huidige identiteit past niet meer bij de kwaliteit of ambitie van je bedrijf.</p></article><article><i>03</i><h3>Te weinig samenhang</h3><p>Website, social media en documenten voelen nu als verschillende merken.</p></article><article><i>04</i><h3>Nieuwe positionering</h3><p>Je aanbod of doelgroep verandert en je merk moet die richting zichtbaar maken.</p></article></div></section>
+
+    <section class="brand-faq shell" aria-labelledby="brand-faq-title"><div><span class="wd-eyebrow">Branding FAQ</span><h2 id="brand-faq-title">Goede vragen.<br><em>Heldere verwachtingen.</em></h2></div><div class="wd-faq-list"><details><summary>Ontwerpen jullie alleen een logo?<span>+</span></summary><p>We ontwerpen een logo altijd als onderdeel van een bredere identiteit, zodat het aansluit op positionering, kleur, typografie en dagelijks gebruik.</p></details><details><summary>Kan mijn bestaande logo worden behouden?<span>+</span></summary><p>Ja, wanneer de basis sterk genoeg is. We onderzoeken dan hoe het logo kan worden verfijnd en opgenomen in een consistenter visueel systeem.</p></details><details><summary>Welke middelen worden ontworpen?<span>+</span></summary><p>Dat bepalen we samen op basis van wat je echt gebruikt. Denk aan websitecomponenten, social templates, presentaties, drukwerk of signing.</p></details><details><summary>Kan Webschets de branding ook naar een website vertalen?<span>+</span></summary><p>Ja. Branding en webdesign kunnen als één traject worden ontwikkeld, waardoor strategie, uitstraling en digitale ervaring direct op elkaar aansluiten.</p></details><details><summary>Krijg ik alle bestanden na oplevering?<span>+</span></summary><p>Ja. Je ontvangt relevante logoformaten, kleurwaarden, lettertype-afspraken, visuele bouwstenen en een praktische brandguide.</p></details></div></section>
+
+    <section class="wd-final-cta shell brand-final-cta"><span>Tijd voor een herkenbaar merk</span><h2>Laat zien waarom klanten<br><em>voor jou moeten kiezen.</em></h2><p>We ontdekken samen de juiste merkrichting en vertalen die naar een identiteit die professioneel, eigen en toekomstbestendig voelt.</p><a class="wd-button" href="contact.html">Plan jouw merksessie <span>↗</span></a></section>
+  <section class="brand-v2 brand-v2-foundation" aria-labelledby="brand-v2-foundation-title">
+    <div class="brand-v2-grid">
+      <div class="brand-v2-copy">
+        <span class="brand-v2-tag">Merkidentiteit als systeem</span>
+        <h2 id="brand-v2-foundation-title">Herkenbaar vóórdat je <span>naam gelezen is.</span></h2>
+        <p>Een sterk merk is meer dan een logo. We bouwen een visuele taal waarin positionering, kleur, typografie en toepassingen elkaar versterken — herkenbaar op ieder contactmoment.</p>
+        <div class="brand-v2-points">
+          <div class="brand-v2-point"><i></i><div><strong>Logo met karakter</strong><span>Een helder beeldmerk en woordmerk dat klein én groot overtuigt.</span></div></div>
+          <div class="brand-v2-point"><i></i><div><strong>Huisstijl met regels</strong><span>Kleur, typografie, beeldtaal en compositie vastgelegd voor consistent gebruik.</span></div></div>
+        </div>
+      </div>
+      <div class="brand-system" aria-label="Visualisatie van een compleet huisstijlsysteem">
+        <div class="brand-system-head"><span>Visuele identiteit</span><span>Logo · kleur · type</span></div>
+        <div class="brand-system-mark"><div class="brand-system-logo">web<b>schets</b><em>.</em></div></div>
+        <div class="brand-system-tools">
+          <div class="brand-tool"><small>Merkkleuren</small><div class="brand-swatches"><i style="background:#14213d"></i><i style="background:#2868ff"></i><i style="background:#7444ff"></i><i style="background:#ff6d5f"></i></div></div>
+          <div class="brand-tool"><small>Typografische schaal</small><div class="brand-type"><b>A</b><b>A</b><b>A</b></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brand-v2 brand-vehicle" aria-labelledby="brand-vehicle-title">
+    <div class="brand-touch-head">
+      <div><span class="brand-v2-tag">Bedrijfsbestickering</span><h2 id="brand-vehicle-title">Van bedrijfswagen naar <span>rijdend merk.</span></h2></div>
+      <p>We ontwerpen voertuigbestickering die ook in beweging direct leesbaar is. Niet zoveel mogelijk informatie, maar precies genoeg herkenning om naam, vakgebied en contact te laten blijven hangen.</p>
+    </div>
+    <div class="brand-vehicle-stage">
+      <svg class="brand-van" viewBox="0 0 1000 480" role="img" aria-label="Mercedes bedrijfswagen met opvallende bedrijfsbestickering">
+        <defs><linearGradient id="vanBody" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dfe5ef"/></linearGradient><linearGradient id="vanAccent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#246cff"/><stop offset="1" stop-color="#7142ff"/></linearGradient></defs>
+        <ellipse cx="510" cy="421" rx="420" ry="31" fill="#14213d" opacity=".16"/>
+        <path d="M105 352V208c0-38 20-67 57-84l138-64h466c36 0 69 20 86 52l55 104 18 136H105Z" fill="url(#vanBody)" stroke="#c8d1df" stroke-width="4"/>
+        <path d="M292 72 168 132c-24 12-39 31-45 58h205l57-118h-93Z" fill="#182433"/><path d="M403 73h246l57 117H348l55-117Z" fill="#172332"/>
+        <path d="M642 72h116c30 0 58 17 72 44l39 74H715L642 72Z" fill="#202d3c"/>
+        <path d="M572 194h296l33 75-90 83H623L572 194Z" fill="url(#vanAccent)"/>
+        <path d="M764 194h34l-138 158h-36l140-158Z" fill="#ff6d5f"/><path d="M813 194h18L700 352h-20l133-158Z" fill="#fff" opacity=".9"/>
+        <text x="382" y="254" font-family="Poppins,Arial" font-size="52" font-weight="700" fill="#13213d">VOLT</text><text x="383" y="286" font-family="Poppins,Arial" font-size="18" font-weight="600" letter-spacing="4" fill="#2868ff">ELEKTROTECHNIEK</text>
+        <text x="383" y="319" font-family="Poppins,Arial" font-size="14" fill="#65738a">Slim geschakeld. Sterk uitgevoerd.</text>
+        <circle cx="270" cy="361" r="72" fill="#15202f"/><circle cx="270" cy="361" r="39" fill="#8793a5"/><circle cx="270" cy="361" r="25" fill="#1b2735"/>
+        <circle cx="786" cy="361" r="72" fill="#15202f"/><circle cx="786" cy="361" r="39" fill="#8793a5"/><circle cx="786" cy="361" r="25" fill="#1b2735"/>
+        <path d="M107 315h74M895 312h30" stroke="#ff6d5f" stroke-width="12" stroke-linecap="round"/>
+      </svg>
+      <div class="brand-vehicle-note"><strong>Ontworpen voor herkenning</strong><span>Leesbaar op afstand en in beweging</span></div>
+    </div>
+  </section>
+
+  <section class="brand-v2 brand-touchpoints" aria-labelledby="brand-touch-title">
+    <div class="brand-touch-head"><div><span class="brand-v2-tag">Eén merk, ieder contactpunt</span><h2 id="brand-touch-title">Consistent waar klanten je <span>tegenkomen.</span></h2></div><p>Van visitekaartje tot wagenpark en van offerte tot social post: dezelfde merkpersoonlijkheid, vertaald naar het juiste formaat.</p></div>
+    <div class="brand-touch-track">
+      <article class="brand-touch"><div class="brand-touch-icon">◫</div><h3>Logo & huisstijl</h3><p>Logo-varianten, kleuren, typografie en heldere gebruiksregels.</p></article>
+      <article class="brand-touch"><div class="brand-touch-icon">◇</div><h3>Bedrijfsbestickering</h3><p>Opvallende voertuig- en gevelbestickering met sterke leesbaarheid.</p></article>
+      <article class="brand-touch"><div class="brand-touch-icon">▤</div><h3>Drukwerk</h3><p>Visitekaarten, offertes, flyers en presentaties in één herkenbare lijn.</p></article>
+      <article class="brand-touch"><div class="brand-touch-icon">◎</div><h3>Digitale branding</h3><p>Social templates, advertenties en digitale assets die direct eigen voelen.</p></article>
+    </div>
+  </section>
+
+  <section class="brand-v2 brand-v2-cta">
+    <div class="brand-v2-cta-inner"><h2>Van losse uitingen naar één merk dat <span>blijft hangen.</span></h2><a href="contact.html">Start jouw aanvraag <i>›</i></a></div>
+  </section>
+</main>
+
+  <footer class="shell"><p>Webschets</p></footer>
+  <script src="app.js?v=8"></script>
+  <script src="shared-header.js?v=9"></script>
+  <script src="shared-footer.js?v=6"></script>
+  <script id="brand-foundation-blueprint-script">
+    (() => {
+      const section = document.querySelector('.brand-foundation');
+      if (!section || section.querySelector('.brand-foundation-blueprint')) return;
+      const visual = [...section.children].find((element) => {
+        const text = element.textContent || '';
+        return text.includes('Doelgroep') && text.includes('Belofte') && text.includes('Karakter') && text.includes('Positie');
+      });
+      if (!visual) return;
+      visual.className = 'brand-foundation-blueprint';
+      visual.setAttribute('aria-label', 'Merkstrategie opgebouwd vanuit doelgroep, belofte en karakter');
+      visual.innerHTML = `
+        <div class="brand-blueprint-head">
+          <span class="brand-blueprint-kicker">MERKKOMPAS</span>
+          <span class="brand-blueprint-status">RICHTING BEPAALD</span>
+        </div>
+        <h3 class="brand-blueprint-title">Van betekenis naar een merk dat blijft hangen.</h3>
+        <div class="brand-blueprint-list">
+          <article class="brand-blueprint-row">
+            <span class="brand-blueprint-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 19c.7-4 3-6 6.5-6s5.8 2 6.5 6"/><path d="M18.7 7.4a2.5 2.5 0 0 1 0 4.7M20.5 18c-.3-2.1-1.3-3.6-3-4.4"/></svg>
+            </span>
+            <div><strong>Doelgroep</strong><p>Voor wie moet je merk direct relevant en vertrouwd voelen?</p></div>
+          </article>
+          <article class="brand-blueprint-row">
+            <span class="brand-blueprint-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12.5 9.2 18 20 6.5"/><path d="M6 5.5h7M6 9h4"/></svg>
+            </span>
+            <div><strong>Belofte</strong><p>Welke waarde moet iedere uiting herkenbaar en geloofwaardig maken?</p></div>
+          </article>
+          <article class="brand-blueprint-row">
+            <span class="brand-blueprint-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 14 9l6 2-6 2-2 6-2-6-6-2 6-2 2-6Z"/><path d="m18.5 4 .7 2.1 2.1.7-2.1.7-.7 2.1-.7-2.1-2.1-.7 2.1-.7.7-2.1Z"/></svg>
+            </span>
+            <div><strong>Karakter</strong><p>Hoe klinkt, voelt en gedraagt je merk op ieder contactmoment?</p></div>
+          </article>
+        </div>
+        <div class="brand-blueprint-result">
+          <span>EIGEN POSITIE</span>
+          <strong>Herkenbaar genoeg om te vertrouwen. Eigen genoeg om te onthouden.</strong>
+        </div>`;
+    })();
+  </script>
+<style>
+  .brand-vehicle-stage .brand-vehicle-photo {
+    display: block;
+    width: min(100%, 1040px);
+    max-height: 520px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 28px;
+    filter: drop-shadow(0 24px 30px rgba(17, 38, 78, 0.18));
+  }
+
+  @media (max-width: 720px) {
+    .brand-vehicle-stage .brand-vehicle-photo {
+      max-height: 360px;
+      border-radius: 20px;
+    }
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const currentVehicle = document.querySelector('.brand-vehicle-stage svg.brand-van');
+    if (!currentVehicle) return;
+
+    const vehiclePhoto = document.createElement('img');
+    vehiclePhoto.className = 'brand-vehicle-photo';
+    vehiclePhoto.src = 'assets/candidate.png';
+    vehiclePhoto.alt = 'BMW M5 met Webschets bedrijfsbestickering';
+    vehiclePhoto.loading = 'lazy';
+    vehiclePhoto.decoding = 'async';
+    currentVehicle.replaceWith(vehiclePhoto);
+  });
+</script>
+</body>
+</html>

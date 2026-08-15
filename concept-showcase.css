@@ -1,0 +1,405 @@
+.concept-showcase {
+  margin-top: calc(-1 * clamp(120px, 15vh, 190px)) !important;
+  padding-top: clamp(88px, 8vw, 108px) !important;
+  padding-bottom: clamp(100px, 9vw, 120px) !important;
+}
+
+.concept-showcase-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 32px;
+  margin-bottom: clamp(38px, 3vw, 48px);
+}
+
+.concept-showcase-eyebrow {
+  margin: 0 0 16px;
+  padding: 0;
+  background: none;
+}
+
+.concept-showcase-head h2 {
+  max-width: 880px;
+  margin: 0;
+  color: var(--ws-ink, #122945);
+  font-family: var(--ws-font, "Poppins", Arial, sans-serif);
+  font-size: clamp(38px, 3.4vw, 52px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.concept-showcase-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+  color: var(--ws-blue, #2d67ff);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.concept-showcase-all span,
+.concept-showcase-meta i {
+  color: var(--coral, #ff725c);
+  font-style: normal;
+  transition: transform .25s ease;
+}
+
+.concept-showcase-grid {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 2vw, 24px);
+}
+
+.concept-showcase-grid::before {
+  position: absolute;
+  z-index: -1;
+  inset: -34px 4% -42px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 20% 42%, rgba(69, 126, 255, .2), transparent 38%),
+    radial-gradient(circle at 72% 60%, rgba(117, 72, 255, .16), transparent 42%);
+  filter: blur(38px);
+  content: "";
+  pointer-events: none;
+}
+
+.concept-showcase-card {
+  display: flex;
+  min-width: 0;
+  min-height: 100%;
+  flex-direction: column;
+  padding: clamp(16px, 1.5vw, 20px);
+  overflow: hidden;
+  border: 1px solid rgba(214, 222, 238, .76);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, .56), rgba(244, 248, 255, .3));
+  -webkit-backdrop-filter: blur(22px) saturate(124%);
+  backdrop-filter: blur(22px) saturate(124%);
+  box-shadow: 0 14px 36px rgba(37, 61, 102, .075), inset 0 1px 0 rgba(255, 255, 255, .72);
+  color: var(--ws-ink, #122945);
+  text-decoration: none;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.concept-showcase-visual {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid rgba(207, 216, 233, .72);
+  border-radius: 13px;
+  background: #f5f7fc;
+}
+
+.concept-showcase-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s cubic-bezier(.2, .75, .2, 1);
+}
+
+.concept-showcase-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 50px;
+  padding-top: 2px;
+}
+
+.concept-showcase-meta strong {
+  color: var(--ws-ink, #122945);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.concept-showcase-meta > span {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 10px;
+  color: var(--ws-blue, #2d67ff);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.concept-showcase-card:focus-visible,
+.concept-showcase-all:focus-visible {
+  outline: 3px solid rgba(45, 103, 255, .35);
+  outline-offset: 4px;
+}
+
+@media (hover: hover) {
+  .concept-showcase-card:hover {
+    transform: translateY(-3px);
+    border-color: #cdd9f2;
+    box-shadow: 0 18px 42px rgba(30, 51, 87, .11);
+  }
+
+  .concept-showcase-card:hover .concept-showcase-visual img { transform: scale(1.01); }
+  .concept-showcase-card:hover .concept-showcase-meta i,
+  .concept-showcase-all:hover span { transform: translateX(3px); }
+  .concept-showcase-all:hover { color: var(--violet, #7137ff); }
+}
+
+@media (max-width: 900px) {
+  .concept-showcase { margin-top: -100px !important; padding-top: 80px !important; padding-bottom: 88px !important; }
+  .concept-showcase-head { grid-template-columns: 1fr; align-items: start; gap: 18px; }
+  .concept-showcase-all { margin: 0; }
+  .concept-showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .concept-showcase-card { padding: 18px; }
+}
+
+@media (max-width: 600px) {
+  .concept-showcase { margin-top: -82px !important; padding-top: 72px !important; padding-bottom: 80px !important; }
+  .concept-showcase-head { margin-bottom: 28px; }
+  .concept-showcase-head h2 { font-size: clamp(34px, 9vw, 40px); }
+  .concept-showcase-grid { grid-template-columns: 1fr; gap: 18px; }
+  .concept-showcase-card { width: 100%; padding: 16px; border-radius: 18px; }
+  .concept-showcase-meta { align-items: flex-start; flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .concept-showcase-card,
+  .concept-showcase-visual img,
+  .concept-showcase-all span,
+  .concept-showcase-meta i { transition: none; }
+}
+
+/* The homepage branch concepts reuse the same showcase component while the
+   existing branch-card classes continue to power the detail dialog. */
+.branch-showcase.concept-showcase {
+  margin-top: 0 !important;
+  padding-top: clamp(88px, 8vw, 108px) !important;
+  padding-bottom: clamp(100px, 9vw, 120px) !important;
+}
+
+.branch-showcase .concept-showcase-visual {
+  aspect-ratio: 3 / 2;
+  border-radius: 16px;
+  background-color: #f5f7fc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform .4s cubic-bezier(.2, .75, .2, 1);
+}
+
+.branch-showcase .branch-card.realtor .branch-preview {
+  background-image: url("assets/images/concepts/branch-makelaar-device-mockup-wide-phone.webp");
+}
+
+.branch-showcase .branch-card.automotive .branch-preview {
+  background-image: url("assets/images/concepts/branch-autodealer-device-mockup-wide-phone.webp");
+}
+
+.branch-showcase .branch-card.contractor .branch-preview {
+  background-image: url("assets/images/concepts/branch-aannemer-device-mockup-wide-phone.webp");
+}
+
+@media (hover: hover) {
+  .branch-showcase .concept-showcase-card:hover .concept-showcase-visual {
+    transform: scale(1.01);
+  }
+}
+
+@media (max-width: 900px) {
+  .branch-showcase.concept-showcase {
+    margin-top: 0 !important;
+    padding-top: 80px !important;
+    padding-bottom: 88px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .branch-showcase.concept-showcase {
+    margin-top: 0 !important;
+    padding-top: 72px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .branch-showcase .concept-showcase-visual {
+    border-radius: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .branch-showcase .concept-showcase-visual { transition: none; }
+}
+
+/* The branch showcase now follows the homepage hero directly. Keep that
+   transition compact without changing the component spacing elsewhere. */
+.home-page .hero + .branch-showcase.concept-showcase {
+  padding-top: clamp(38px, 4vw, 52px) !important;
+}
+
+@media (max-width: 900px) {
+  .home-page .hero + .branch-showcase.concept-showcase {
+    padding-top: 48px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-page .hero + .branch-showcase.concept-showcase {
+    padding-top: 40px !important;
+  }
+}
+
+.home-build-hosting {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+  align-items: center;
+  gap: clamp(48px, 6vw, 92px);
+  margin-top: 0 !important;
+  padding-top: clamp(88px, 8vw, 108px) !important;
+  padding-bottom: clamp(100px, 9vw, 120px) !important;
+}
+
+.home-build-hosting-visual {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  margin: 0;
+  place-items: center;
+}
+
+.home-build-hosting-glow {
+  position: absolute;
+  z-index: -1;
+  width: 82%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 36% 42%, rgba(50, 116, 255, .24), transparent 48%),
+    radial-gradient(circle at 68% 62%, rgba(116, 69, 255, .2), transparent 50%);
+  filter: blur(38px);
+  opacity: .78;
+  pointer-events: none;
+}
+
+.home-build-hosting-visual img {
+  position: relative;
+  display: block;
+  width: 112%;
+  max-width: none;
+  height: auto;
+  margin-left: -9%;
+  filter: drop-shadow(0 28px 42px rgba(36, 57, 99, .14));
+}
+
+.home-build-hosting-copy { min-width: 0; }
+
+.home-build-hosting-copy .kicker {
+  margin: 0 0 16px;
+  padding: 0;
+  background: none;
+}
+
+.home-build-hosting-copy h2 {
+  margin: 0;
+  color: var(--ws-ink, #122945);
+  font-family: var(--ws-font, "Poppins", Arial, sans-serif);
+  font-size: clamp(38px, 3.4vw, 52px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.home-build-hosting-copy h2 span { color: var(--ws-blue, #2d67ff); }
+
+.home-build-hosting-intro {
+  max-width: 600px;
+  margin: 24px 0 28px;
+  color: var(--muted, #74839a);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.home-build-hosting-points {
+  border-top: 1px solid rgba(198, 208, 228, .72);
+  border-bottom: 1px solid rgba(198, 208, 228, .72);
+}
+
+.home-build-hosting-points > div {
+  display: grid;
+  grid-template-columns: minmax(135px, .38fr) 1fr;
+  gap: 20px;
+  padding: 17px 0;
+}
+
+.home-build-hosting-points > div + div { border-top: 1px solid rgba(198, 208, 228, .58); }
+.home-build-hosting-points strong { color: var(--ws-ink, #122945); font-size: 12px; font-weight: 600; }
+.home-build-hosting-points span { color: var(--muted, #74839a); font-size: 11px; line-height: 1.55; }
+
+.home-build-hosting-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.home-build-hosting-actions .button { min-height: 50px; }
+
+.home-build-hosting-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ws-blue, #2d67ff);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.home-build-hosting-link span {
+  color: var(--coral, #ff725c);
+  transition: transform .25s ease;
+}
+
+@media (hover: hover) {
+  .home-build-hosting-link:hover span { transform: translateX(3px); }
+}
+
+@media (max-width: 900px) {
+  .home-build-hosting {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    margin-top: 0 !important;
+    padding-top: 80px !important;
+    padding-bottom: 88px !important;
+  }
+
+  .home-build-hosting-visual { width: min(100%, 720px); margin-inline: auto; }
+  .home-build-hosting-visual img { width: 108%; margin-left: -4%; }
+  .home-build-hosting-copy { max-width: 720px; }
+}
+
+@media (max-width: 600px) {
+  .home-build-hosting {
+    gap: 18px;
+    margin-top: 0 !important;
+    padding-top: 72px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .home-build-hosting-visual img { width: 116%; margin-left: -8%; }
+  .home-build-hosting-copy h2 { font-size: clamp(34px, 9vw, 40px); }
+  .home-build-hosting-intro { margin: 20px 0 24px; font-size: 13px; }
+  .home-build-hosting-points > div { grid-template-columns: 1fr; gap: 6px; padding: 15px 0; }
+  .home-build-hosting-actions { align-items: stretch; flex-direction: column; gap: 16px; margin-top: 24px; }
+  .home-build-hosting-actions .button { width: 100%; justify-content: space-between; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-build-hosting-link span { transition: none; }
+}

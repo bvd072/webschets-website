@@ -1,0 +1,33 @@
+:where(article,[class*="-card"],[class*="-tile"],[class*="-panel"]) :is(h2,h3,h4){font-weight:600!important}
+:where(article,[class*="-card"],[class*="-tile"],[class*="-panel"])>strong:first-of-type{font-weight:600!important}
+
+
+.timeline .day>span,
+.process .day>span{font-weight:600!important}
+
+body.process-page #route{display:none!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;overflow:hidden!important}
+
+
+body.process-page{
+  --process-type-hero:clamp(47.5px,5.7vw,77.9px);
+  --process-type-section:clamp(42px,4.75vw,66px);
+  --process-type-card:clamp(19px,1.65vw,25px);
+  --process-type-body:clamp(15px,1.25vw,18px)
+}
+body.process-page,
+body.process-page :is(header,main,footer,button,input,select,textarea){font-family:"Poppins",Arial,sans-serif!important}
+body.process-page main :is(h1,h2,h3,h4){font-family:"Poppins",Arial,sans-serif!important;font-weight:600!important}
+body.process-page main>.process-hero h1{font-size:var(--process-type-hero)!important;line-height:.98!important;letter-spacing:-.055em!important}
+body.process-page main :is(.process-payment-copy h2,.process-copy h2,.process-heading h2,.wd-faq-heading h2,.wd-final-cta h2){font-size:var(--process-type-section)!important;line-height:1!important;letter-spacing:-.05em!important}
+body.process-page main :is(.process-hero-copy>p,.process-payment-copy>p,.process-copy>p,.process-heading>p,.wd-final-cta>p){font-family:"Poppins",Arial,sans-serif!important;font-size:var(--process-type-body)!important;font-weight:400!important;line-height:1.65!important}
+body.process-page main :is(.wd-eyebrow,button,.wd-button,li),
+body.process-page main article :is(p,small,span,i,em),
+body.process-page .shared-site-header nav a,
+body.process-page footer :is(p,a,span,small){font-family:"Poppins",Arial,sans-serif!important;font-weight:400!important}
+body.process-page main article :is(h2,h3,h4,strong,b),
+body.process-page main summary{font-family:"Poppins",Arial,sans-serif!important;font-weight:600!important}
+body.process-page main .support-grid article>h3{font-size:var(--process-type-card)!important;line-height:1.2!important}
+body.process-page main :is(button,.wd-button){font-size:13px!important;font-weight:400!important}
+body.process-page .shared-site-header .nav-cta,
+body.process-page footer a{font-weight:400!important}
+body.process-page main .wd-eyebrow{font-size:10px!important;font-weight:400!important}
