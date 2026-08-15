@@ -618,3 +618,26 @@ html body main > section.unified-page-hero > .unified-trust-bar > div + div {
     border-left: 0 !important;
   }
 }
+
+
+/* Match the final rendered homepage trust-bar measurements on desktop. */
+@media (min-width: 901px) {
+  html body main > section.unified-page-hero > .unified-trust-bar {
+    right: auto !important;
+    bottom: clamp(90px, 12.6vh, 100px) !important;
+    width: calc(100% + 12px) !important;
+  }
+
+  html body.services-page main > section.page-hero.services-overview-hero.unified-page-hero > .unified-trust-bar {
+    right: auto !important;
+    width: calc(100% + 12px) !important;
+  }
+
+  .unified-trust-bar .hero-trust-mark {
+    font-size: 12px !important;
+  }
+
+  .unified-trust-bar small {
+    font-size: 12px !important;
+  }
+}
