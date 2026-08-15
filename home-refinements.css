@@ -724,3 +724,22 @@ html body.home-page main#top > section.website-problems.shell::after {
   opacity: 0 !important;
   animation: none !important;
 }
+
+
+/* Herstel oorspronkelijke kopvolgorde: label en titel links, introductie rechts. */
+@media (min-width: 761px) {
+  body.home-page main#top > section.website-problems .problem-head {
+    grid-template-columns: minmax(0, 1.18fr) minmax(0, .82fr) !important;
+  }
+
+  body.home-page main#top > section.website-problems .problem-head > div {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  body.home-page main#top > section.website-problems .problem-head > p {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+  }
+}
