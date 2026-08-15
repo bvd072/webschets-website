@@ -42,7 +42,7 @@
       <div class="header-services-grid">
         <a href="webdesign.html"><i class="service-menu-icon icon-design"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18M7 12h5M7 15h8"/></svg></i><span><strong>Webdesign</strong><small>UX, interface & conversie</small></span><b>↗</b></a>
         <a href="development.html"><i class="service-menu-icon icon-development"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14.5 4.5l-5 15"/></svg></i><span><strong>Development</strong><small>Snel, schaalbaar & beheerbaar</small></span><b>↗</b></a>
-        <a href="hosting.html"><i class="service-menu-icon icon-hosting"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .8-7.9A6 6 0 0 0 6.4 8.6 4.8 4.8 0 0 0 7 18Z"/><path d="m9.5 13 2 2 3.5-4"/></svg></i><span><strong>Hosting & onderhoud</strong><small>Veilig, actueel & ondersteund</small></span><b>↗</b></a>
+        <a href="hosting.html"><i class="service-menu-icon icon-hosting"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .8-7.9A6 6 0 0 0 6.4 8.6 4.8 4.8 0 0 0 7 18Z"/><path d="m9.5 13 2 2 3.5-4"/></svg></i><span><strong>Hosting</strong><small>Veilig, actueel & ondersteund</small></span><b>↗</b></a>
         <a href="branding.html"><i class="service-menu-icon icon-branding"><svg viewBox="0 0 24 24"><path d="m12 3 2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2L12 3Z"/><circle cx="18.5" cy="5.5" r="1.5"/></svg></i><span><strong>Branding</strong><small>Strategie, identiteit & huisstijl</small></span><b>↗</b></a>
       </div>`;
     serviceMenu.append(dropdown);
