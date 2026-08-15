@@ -178,29 +178,34 @@ html body footer.ws-footer .ws-footer-status i {
 }
 
 
-/* Prominenter watermerk links en krachtige typografie in de volledige footer. */
+/* Vet WEBSCHETS.-watermerk; gewone footertekst behoudt zijn oorspronkelijke typografie. */
 html body footer.ws-footer::before {
+  content: "WEBSCHETS." !important;
+  display: flex !important;
+  align-items: center !important;
   left: 4% !important;
   right: auto !important;
-  width: min(78vw, 1080px) !important;
-  height: 82% !important;
-  background-position: left center !important;
-  opacity: .16 !important;
-  transform: translateY(-50%) !important;
-}
-
-html body footer.ws-footer :is(p, a, span, strong) {
-  font-weight: 700 !important;
+  top: 50% !important;
+  width: auto !important;
+  height: auto !important;
+  background: none !important;
+  filter: none !important;
+  color: #fff !important;
+  font-family: Poppins, Arial, sans-serif !important;
+  font-size: clamp(118px, 17vw, 270px) !important;
+  font-weight: 800 !important;
+  line-height: .82 !important;
+  letter-spacing: -.075em !important;
   text-transform: uppercase !important;
+  white-space: nowrap !important;
+  opacity: .14 !important;
+  transform: translateY(-50%) !important;
 }
 
 @media (max-width: 620px) {
   html body footer.ws-footer::before {
-    left: -16% !important;
-    right: auto !important;
-    width: 138vw !important;
-    height: 66% !important;
-    background-position: left center !important;
-    opacity: .12 !important;
+    left: -12% !important;
+    font-size: clamp(94px, 31vw, 180px) !important;
+    opacity: .11 !important;
   }
 }
