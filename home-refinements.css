@@ -773,3 +773,9 @@ html body.home-page main#top > section.website-problems .problem-head .kicker.se
     animation: none !important;
   }
 }
+
+
+/* Typcursor strak tegen de eerste letter van het label. */
+html body.home-page main#top > section.website-problems .problem-head .kicker.section-label::before {
+  margin-right: 2px !important;
+}
