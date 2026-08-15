@@ -710,3 +710,17 @@ html body.home-page main#top > section.website-problems.shell.website-problems {
   overflow: visible !important;
   isolation: auto !important;
 }
+
+
+/* Open probleemsectie zonder witte overlay of decoratieve gloedlijn. */
+html body.home-page main#top > section.website-problems.shell::before,
+html body.home-page main#top > section.website-problems.shell::after {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  opacity: 0 !important;
+  animation: none !important;
+}
