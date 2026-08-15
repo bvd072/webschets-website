@@ -805,3 +805,11 @@ html body.home-page main#top > section.website-problems .problem-grid article h3
 html body.home-page main#top > section.website-problems .problem-grid article p {
   color: #74829c !important;
 }
+
+
+/* Onderwerptitels sterker en iets groter. */
+html body.home-page main#top > section.website-problems .problem-grid article h3,
+html body.home-page main#top > section.website-problems .problem-grid article h3 span {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+}
