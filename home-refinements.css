@@ -390,3 +390,24 @@ body.home-page main#top section div > .section-label {
     letter-spacing: 1.2px !important;
   }
 }
+
+
+/* De hero had een extra specifieke typografieregel; ook dit is hetzelfde sectielabel. */
+html body.home-page main#top > section.hero.shell .hero-copy > p.hero-eyebrow.section-label {
+  margin: 0 0 14px !important;
+  color: #2864ff !important;
+  font-family: Poppins, Arial, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 1.32px !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 600px) {
+  html body.home-page main#top > section.hero.shell .hero-copy > p.hero-eyebrow.section-label {
+    margin-bottom: 12px !important;
+    font-size: 10px !important;
+    letter-spacing: 1.2px !important;
+  }
+}
