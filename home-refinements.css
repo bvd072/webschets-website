@@ -743,3 +743,33 @@ html body.home-page main#top > section.website-problems.shell::after {
     justify-self: end !important;
   }
 }
+
+
+/* Knipperende typcursor vóór het label van de probleemsectie. */
+@keyframes problemLabelCaretBlink {
+  0%, 48% { opacity: 1; }
+  49%, 100% { opacity: 0; }
+}
+
+html body.home-page main#top > section.website-problems .problem-head .kicker.section-label::before {
+  content: "" !important;
+  display: inline-block !important;
+  position: static !important;
+  width: 2px !important;
+  height: 1em !important;
+  margin: 0 8px 0 0 !important;
+  border: 0 !important;
+  border-radius: 1px !important;
+  background: #2864ff !important;
+  box-shadow: 0 0 8px rgba(40,100,255,.45) !important;
+  vertical-align: -.14em !important;
+  opacity: 1;
+  animation: problemLabelCaretBlink .9s steps(1, end) infinite !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.home-page main#top > section.website-problems .problem-head .kicker.section-label::before {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}
