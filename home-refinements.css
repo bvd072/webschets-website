@@ -437,3 +437,8 @@ html body.home-page .shared-site-header a.nav-cta:hover {
   background: linear-gradient(120deg, #2864ff, #7137ff) !important;
   box-shadow: 0 19px 38px rgba(69, 56, 255, .24) !important;
 }
+
+
+html body.home-page .shared-site-header a.nav-cta {
+  font-size: 11px !important;
+}
