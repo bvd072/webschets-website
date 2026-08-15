@@ -340,3 +340,10 @@
   .home-page .home-branding-visual { min-height: 210px; }
   .home-page .home-branding-visual img { width: 94%; }
 }
+
+
+/* Win van de algemene bodycopy-regel die ook directe paragrafen selecteert. */
+body.home-page main#top .home-branding .home-branding-copy > p.kicker {
+  font-size: 11px !important;
+  letter-spacing: 1.32px !important;
+}
