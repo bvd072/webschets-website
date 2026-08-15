@@ -237,3 +237,168 @@
     padding-top: 44px !important;
   }
 }
+
+
+/* Final specificity layer: page-specific hero files must not change the shared scale. */
+html,
+html body {
+  overflow-x: clip !important;
+}
+
+html body main > section.unified-page-hero.shell {
+  display: grid !important;
+  grid-template-columns: 45% 55% !important;
+  align-items: center !important;
+  column-gap: 12px !important;
+  width: min(calc(100% - 48px), 1236px) !important;
+  min-height: calc(100svh - 70px) !important;
+  margin: 0 auto !important;
+  padding: 42px 0 58px !important;
+  box-sizing: border-box !important;
+}
+
+html body main > section.unified-page-hero > .unified-hero-copy {
+  width: 100% !important;
+  max-width: 505px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: center !important;
+}
+
+html body main > section.unified-page-hero .unified-hero-copy > .unified-hero-label {
+  display: flex !important;
+  align-items: center !important;
+  width: auto !important;
+  max-width: 100% !important;
+  min-height: 17px !important;
+  margin: 0 0 28px !important;
+  padding: 0 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: .12em !important;
+}
+
+html body main > section.unified-page-hero .unified-hero-copy > h1.unified-hero-title {
+  max-width: 505px !important;
+  margin: 0 0 20px !important;
+  padding: 0 !important;
+  font-size: clamp(46px, 4.35vw, 62px) !important;
+  font-weight: 600 !important;
+  line-height: .98 !important;
+  letter-spacing: -.055em !important;
+}
+
+html body main > section.unified-page-hero .unified-hero-copy > p.unified-hero-text {
+  display: block !important;
+  max-width: 489px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+}
+
+html body main > section.unified-page-hero .unified-hero-copy > .unified-hero-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 24px !important;
+  margin: 28px 0 0 !important;
+  padding: 0 !important;
+}
+
+html body main > section.unified-page-hero .unified-hero-copy .unified-hero-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 56px !important;
+  height: 56px !important;
+  padding: 0 25px !important;
+  border-radius: 999px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+}
+
+html body main > section.unified-page-hero > .unified-hero-visual {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  min-height: clamp(430px, 55vh, 500px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: center !important;
+}
+
+html body main > section.unified-page-hero > .unified-hero-visual > img {
+  width: 105% !important;
+  max-width: none !important;
+  max-height: 500px !important;
+  margin: 0 0 0 7.5% !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 900px) {
+  html body main > section.unified-page-hero.shell {
+    grid-template-columns: 1fr !important;
+    row-gap: 22px !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 80px 0 64px !important;
+  }
+
+  html body main > section.unified-page-hero > .unified-hero-visual {
+    width: min(100%, 760px) !important;
+    min-height: 420px !important;
+    margin-inline: auto !important;
+  }
+
+  html body main > section.unified-page-hero > .unified-hero-visual > img {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html body main > section.unified-page-hero.shell {
+    width: min(calc(100% - 32px), 1236px) !important;
+    padding: 52px 0 48px !important;
+    row-gap: 18px !important;
+  }
+
+  html body main > section.unified-page-hero .unified-hero-copy > .unified-hero-label {
+    min-height: 15px !important;
+    margin-bottom: 20px !important;
+    font-size: 11px !important;
+  }
+
+  html body main > section.unified-page-hero .unified-hero-copy > h1.unified-hero-title {
+    margin-bottom: 17px !important;
+    font-size: clamp(40px, 12vw, 48px) !important;
+  }
+
+  html body main > section.unified-page-hero .unified-hero-copy > p.unified-hero-text {
+    font-size: 14px !important;
+  }
+
+  html body main > section.unified-page-hero .unified-hero-copy > .unified-hero-actions {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    margin-top: 23px !important;
+  }
+
+  html body main > section.unified-page-hero .unified-hero-copy .unified-hero-button {
+    min-height: 54px !important;
+    height: 54px !important;
+  }
+
+  html body main > section.unified-page-hero > .unified-hero-visual {
+    min-height: 300px !important;
+  }
+
+  html body main > section.unified-page-hero > .unified-hero-visual > img {
+    max-height: 340px !important;
+  }
+}
