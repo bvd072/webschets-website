@@ -420,3 +420,8 @@ html body.home-page main#top section div > .section-label,
 html body.home-page main#top > section.hero.shell .hero-copy > p.hero-eyebrow.section-label {
   font-size: 13px !important;
 }
+
+
+html body.home-page main#top > section.home-branding.shell .home-branding-copy > p.kicker.section-label {
+  font-size: 13px !important;
+}
