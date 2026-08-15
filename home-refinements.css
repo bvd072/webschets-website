@@ -425,3 +425,15 @@ html body.home-page main#top > section.hero.shell .hero-copy > p.hero-eyebrow.se
 html body.home-page main#top > section.home-branding.shell .home-branding-copy > p.kicker.section-label {
   font-size: 13px !important;
 }
+
+
+/* Laat de gedeelde brandingstijl ook op de homepage winnen. */
+html body.home-page .shared-site-header a.nav-cta {
+  background: linear-gradient(120deg, #2864ff, #7137ff) !important;
+  box-shadow: 0 14px 30px rgba(69, 56, 255, .17) !important;
+}
+
+html body.home-page .shared-site-header a.nav-cta:hover {
+  background: linear-gradient(120deg, #2864ff, #7137ff) !important;
+  box-shadow: 0 19px 38px rgba(69, 56, 255, .24) !important;
+}
