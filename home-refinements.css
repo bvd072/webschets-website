@@ -853,3 +853,10 @@ html body.home-page main#top > section.hero.shell .hero-copy > h1 {
     font-size: clamp(44px, 8vw, 62px) !important;
   }
 }
+
+
+/* Hero-titel semibold voor een rustiger, moderner gewicht. */
+html body.home-page main#top > section.hero.shell .hero-copy > h1,
+html body.home-page main#top > section.hero.shell .hero-copy > h1 span {
+  font-weight: 600 !important;
+}
