@@ -231,3 +231,29 @@ html body footer.ws-footer::before {
     transform: none !important;
   }
 }
+
+
+/* Rustig geïntegreerd footerwatermerk: zichtbaar, maar niet dominant. */
+html body footer.ws-footer::before {
+  left: 50% !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: -.045em !important;
+  font-size: clamp(82px, 10.5vw, 168px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.055em !important;
+  opacity: .075 !important;
+  transform: translateX(-45%) !important;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%) !important;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%) !important;
+}
+
+@media (max-width: 620px) {
+  html body footer.ws-footer::before {
+    left: 50% !important;
+    bottom: -.035em !important;
+    font-size: clamp(68px, 20vw, 112px) !important;
+    opacity: .065 !important;
+    transform: translateX(-48%) !important;
+  }
+}
