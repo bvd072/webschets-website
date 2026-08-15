@@ -148,3 +148,59 @@ html body *::after {
     padding:11px!important;
   }
 }
+
+
+/* Header CTA: exact dezelfde knoptaal als de branding-CTA. */
+html body .shared-site-header a.nav-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  min-height: 49px !important;
+  padding: 5px 6px 5px 20px !important;
+  border: 0 !important;
+  border-radius: 100px !important;
+  background: linear-gradient(120deg, #2864ff, #7137ff) !important;
+  box-shadow: 0 14px 30px rgba(69, 56, 255, .17) !important;
+  color: #fff !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  transition: transform .25s ease, box-shadow .25s ease !important;
+}
+
+html body .shared-site-header a.nav-cta > .nav-cta-icon {
+  display: grid !important;
+  width: 37px !important;
+  height: 37px !important;
+  flex: 0 0 37px !important;
+  margin: 0 !important;
+  place-items: center !important;
+  border: 1px solid rgba(255, 255, 255, .33) !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, .15) !important;
+  color: #fff !important;
+  transition: transform .25s ease, background .25s ease !important;
+}
+
+html body .shared-site-header a.nav-cta > .nav-cta-icon svg {
+  width: 17px !important;
+  height: 17px !important;
+  fill: none !important;
+  stroke: #fff !important;
+  stroke-width: 1.7 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+}
+
+html body .shared-site-header a.nav-cta:hover {
+  transform: translateY(-3px) !important;
+  background: linear-gradient(120deg, #2864ff, #7137ff) !important;
+  box-shadow: 0 19px 38px rgba(69, 56, 255, .24) !important;
+}
+
+html body .shared-site-header a.nav-cta:hover > .nav-cta-icon {
+  transform: translateX(2px) !important;
+  background: rgba(255, 255, 255, .22) !important;
+}
