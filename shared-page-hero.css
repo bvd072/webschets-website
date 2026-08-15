@@ -1,0 +1,239 @@
+/* Shared page heroes: proportions follow the homepage hero. */
+.unified-page-hero {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 45% 55% !important;
+  align-items: center !important;
+  column-gap: 12px !important;
+  width: min(calc(100% - 48px), 1236px) !important;
+  min-height: calc(100svh - 70px) !important;
+  margin-inline: auto !important;
+  padding: 42px 0 58px !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+.unified-page-hero > .unified-hero-copy {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  max-width: 505px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: center !important;
+}
+
+.unified-page-hero .unified-hero-label {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 0 28px !important;
+  color: #2864ff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+}
+
+.unified-page-hero .unified-hero-label::before {
+  content: "" !important;
+  flex: 0 0 22px !important;
+  width: 22px !important;
+  height: 1px !important;
+  background: #2864ff !important;
+}
+
+.unified-page-hero .unified-hero-title,
+.unified-page-hero .unified-hero-copy > h1 {
+  max-width: 505px !important;
+  margin: 0 0 20px !important;
+  color: #080b12 !important;
+  font-family: Poppins, Manrope, sans-serif !important;
+  font-size: clamp(46px, 4.35vw, 62px) !important;
+  font-weight: 600 !important;
+  line-height: .98 !important;
+  letter-spacing: -.055em !important;
+  text-wrap: balance !important;
+}
+
+.unified-page-hero .unified-hero-title span,
+.unified-page-hero .unified-hero-title em,
+.unified-page-hero .unified-hero-copy > h1 span,
+.unified-page-hero .unified-hero-copy > h1 em {
+  color: #2864ff !important;
+  font-style: normal !important;
+  background: linear-gradient(110deg, #2864ff 10%, #2864ff 52%, #7137ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.unified-page-hero .unified-hero-text,
+.unified-page-hero .unified-hero-copy > p:not(.unified-hero-label) {
+  max-width: 489px !important;
+  margin: 0 !important;
+  color: #718097 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  letter-spacing: 0 !important;
+}
+
+.unified-page-hero .unified-hero-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 24px !important;
+  margin: 28px 0 0 !important;
+}
+
+.unified-page-hero .unified-hero-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+  min-height: 56px !important;
+  padding: 0 25px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(115deg, #246eff, #7137ff) !important;
+  box-shadow: 0 17px 36px rgba(61, 77, 225, .2) !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+}
+
+.unified-page-hero .unified-hero-button span {
+  color: inherit !important;
+  font-size: 16px !important;
+  -webkit-text-fill-color: currentColor !important;
+  background: none !important;
+}
+
+.unified-page-hero > .unified-hero-visual {
+  position: relative !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: clamp(430px, 55vh, 500px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: center !important;
+  isolation: isolate !important;
+  overflow: visible !important;
+}
+
+.unified-page-hero > .unified-hero-visual::before {
+  content: "" !important;
+  position: absolute !important;
+  z-index: -1 !important;
+  width: 78% !important;
+  aspect-ratio: 1 !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(72, 111, 255, .18), rgba(226, 221, 255, .13) 49%, transparent 72%) !important;
+  filter: blur(18px) !important;
+}
+
+.unified-page-hero > .unified-hero-visual > img {
+  position: relative !important;
+  z-index: 1 !important;
+  display: block !important;
+  width: 105% !important;
+  max-width: none !important;
+  height: auto !important;
+  max-height: 500px !important;
+  margin: 0 0 0 7.5% !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 34px 38px rgba(31, 47, 91, .16)) !important;
+  transform: none !important;
+}
+
+/* Secondary proof blocks stay out of the core hero rhythm. */
+.unified-page-hero .process-proof,
+.unified-page-hero .contact-promises,
+.unified-page-hero .cx-hero-note,
+.unified-page-hero > .cx-hero-signal {
+  display: none !important;
+}
+
+/* Detail pages retain their in-depth explanation directly after the hero. */
+.wd-service-intro.wd-service-details {
+  min-height: 0 !important;
+  padding-top: 64px !important;
+}
+
+@media (max-width: 900px) {
+  .unified-page-hero {
+    grid-template-columns: 1fr !important;
+    row-gap: 22px !important;
+    min-height: 0 !important;
+    padding: 80px 0 64px !important;
+  }
+
+  .unified-page-hero > .unified-hero-copy {
+    max-width: 620px !important;
+  }
+
+  .unified-page-hero > .unified-hero-visual {
+    width: min(100%, 760px) !important;
+    min-height: 420px !important;
+    margin-inline: auto !important;
+  }
+
+  .unified-page-hero > .unified-hero-visual > img {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .unified-page-hero {
+    width: min(calc(100% - 32px), 1236px) !important;
+    padding: 52px 0 48px !important;
+    row-gap: 18px !important;
+  }
+
+  .unified-page-hero .unified-hero-label {
+    margin-bottom: 20px !important;
+    font-size: 11px !important;
+  }
+
+  .unified-page-hero .unified-hero-title,
+  .unified-page-hero .unified-hero-copy > h1 {
+    margin-bottom: 17px !important;
+    font-size: clamp(40px, 12vw, 48px) !important;
+    letter-spacing: -.05em !important;
+  }
+
+  .unified-page-hero .unified-hero-text,
+  .unified-page-hero .unified-hero-copy > p:not(.unified-hero-label) {
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+  }
+
+  .unified-page-hero .unified-hero-actions {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    margin-top: 23px !important;
+  }
+
+  .unified-page-hero .unified-hero-button {
+    min-height: 54px !important;
+  }
+
+  .unified-page-hero > .unified-hero-visual {
+    min-height: 300px !important;
+  }
+
+  .unified-page-hero > .unified-hero-visual > img {
+    max-height: 340px !important;
+  }
+
+  .wd-service-intro.wd-service-details {
+    padding-top: 44px !important;
+  }
+}
