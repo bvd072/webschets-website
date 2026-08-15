@@ -221,3 +221,25 @@ html body .shared-site-header a.nav-cta:hover > .nav-cta-icon {
     margin-top: 0 !important;
   }
 }
+
+
+/* Hoofdnavigatie: één vaste typografische maat en exact gelijke tussenruimte. */
+@media (min-width: 901px) {
+  html body .shared-site-header > nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 28px !important;
+  }
+
+  html body .shared-site-header > nav > a,
+  html body .shared-site-header > nav > .header-services {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  html body .shared-site-header > nav > a,
+  html body .shared-site-header > nav > .header-services > a {
+    font-size: 14px !important;
+    line-height: 1 !important;
+  }
+}
