@@ -478,3 +478,143 @@ html body main > section.unified-page-hero.reveal {
   opacity: 1 !important;
   transform: none !important;
 }
+
+
+/* Page-specific trust bars use the exact visual language of the homepage. */
+html body main > section.unified-page-hero > .unified-trust-bar {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: clamp(28px, 4vh, 42px) !important;
+  left: 0 !important;
+  z-index: 3 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 21px 0 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+html body main > section.unified-page-hero > .unified-trust-bar::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, rgba(40, 100, 255, .52), rgba(40, 100, 255, .13) 42%, rgba(105, 68, 255, .18) 72%, transparent) !important;
+}
+
+html body main > section.unified-page-hero > .unified-trust-bar > div {
+  display: flex !important;
+  min-width: 0 !important;
+  align-items: flex-start !important;
+  gap: 11px !important;
+  padding: 0 clamp(15px, 2vw, 28px) !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+html body main > section.unified-page-hero > .unified-trust-bar > div:first-child {
+  padding-left: 0 !important;
+}
+
+html body main > section.unified-page-hero > .unified-trust-bar > div:last-child {
+  padding-right: 0 !important;
+}
+
+html body main > section.unified-page-hero > .unified-trust-bar > div + div {
+  border-left: 1px solid rgba(194, 207, 228, .56) !important;
+}
+
+.unified-trust-bar .hero-trust-mark {
+  display: inline-block !important;
+  width: auto !important;
+  height: auto !important;
+  flex: 0 0 auto !important;
+  margin-top: 2px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: none !important;
+  color: #2864ff !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  letter-spacing: .12em !important;
+  box-shadow: none !important;
+}
+
+.unified-trust-bar > div:first-child .hero-trust-mark {
+  color: #ff6f5d !important;
+}
+
+.unified-trust-bar p,
+.unified-trust-bar strong,
+.unified-trust-bar small {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.unified-trust-bar strong {
+  color: #172a46 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+}
+
+.unified-trust-bar small {
+  margin-top: 4px !important;
+  color: #6f7e93 !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 1.45 !important;
+}
+
+@media (max-width: 900px) {
+  html body main > section.unified-page-hero > .unified-trust-bar {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    grid-column: 1 / -1 !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    margin-top: 22px !important;
+  }
+
+  html body main > section.unified-page-hero > .unified-trust-bar > div:nth-child(3) {
+    padding-left: 0 !important;
+    border-left: 0 !important;
+  }
+
+  html body main > section.unified-page-hero > .unified-trust-bar > div:nth-child(n + 3) {
+    margin-top: 16px !important;
+    padding-top: 16px !important;
+    border-top: 1px solid rgba(204, 214, 233, .55) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html body main > section.unified-page-hero > .unified-trust-bar {
+    grid-template-columns: 1fr !important;
+    margin-top: 18px !important;
+    padding-top: 17px !important;
+  }
+
+  html body main > section.unified-page-hero > .unified-trust-bar > div {
+    padding: 0 !important;
+  }
+
+  html body main > section.unified-page-hero > .unified-trust-bar > div + div {
+    margin-top: 13px !important;
+    padding-top: 13px !important;
+    border-top: 1px solid rgba(204, 214, 233, .52) !important;
+    border-left: 0 !important;
+  }
+}
