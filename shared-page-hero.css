@@ -471,3 +471,10 @@ html body.services-page main > section.page-hero.services-overview-hero.unified-
     line-height: 1.65 !important;
   }
 }
+
+
+/* Heroes are immediately visible; reveal transforms must not change header spacing. */
+html body main > section.unified-page-hero.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+}
