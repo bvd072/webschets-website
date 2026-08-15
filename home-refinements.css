@@ -785,3 +785,23 @@ html body.home-page main#top > section.website-problems .problem-head .kicker.se
 html body.home-page main#top > section.website-problems .problem-head .kicker.section-label::before {
   margin-right: 8px !important;
 }
+
+
+/* Onderwerptitels: compacte 14px-hiërarchie met een zwart/blauwe woordverdeling. */
+html body.home-page main#top > section.website-problems .problem-grid article h3,
+html body.home-page main#top > section.website-problems .problem-grid article p {
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+}
+
+html body.home-page main#top > section.website-problems .problem-grid article h3 {
+  color: #111318 !important;
+}
+
+html body.home-page main#top > section.website-problems .problem-grid article h3 span {
+  color: #2864ff !important;
+}
+
+html body.home-page main#top > section.website-problems .problem-grid article p {
+  color: #74829c !important;
+}
