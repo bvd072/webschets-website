@@ -256,3 +256,56 @@ html body .shared-site-header a.nav-cta:hover > .nav-cta-icon {
     gap: 28px !important;
   }
 }
+
+
+/* Dienstenmenu: leesbare hiërarchie in lijn met de rest van de website. */
+@media (min-width: 901px) {
+  html body header#site-header.shared-site-header:has(.header-services:hover:not(.is-collapsed)),
+  html body header#site-header.shared-site-header:has(.header-services:focus-within),
+  html body header#site-header.shared-site-header:has(.header-services.is-open) {
+    height: 214px !important;
+  }
+
+  html body .shared-site-header .header-services-heading {
+    padding: 2px 4px 12px !important;
+  }
+
+  html body .shared-site-header .header-services-heading > span,
+  html body .shared-site-header .header-services-heading > a {
+    font-size: 11px !important;
+  }
+
+  html body .shared-site-header .header-services-grid > a {
+    grid-template-columns: 52px minmax(0, 1fr) auto !important;
+    gap: 13px !important;
+    min-height: 94px !important;
+    padding: 13px !important;
+  }
+
+  html body .shared-site-header .service-menu-icon {
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 16px !important;
+  }
+
+  html body .shared-site-header .service-menu-icon svg {
+    width: 27px !important;
+    height: 27px !important;
+  }
+
+  html body .shared-site-header .header-services-grid strong {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
+  }
+
+  html body .shared-site-header .header-services-grid small {
+    margin-top: 5px !important;
+    font-size: 10px !important;
+    line-height: 1.4 !important;
+  }
+
+  html body .shared-site-header .header-services-grid > a > b {
+    font-size: 14px !important;
+  }
+}
