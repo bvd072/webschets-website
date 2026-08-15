@@ -176,3 +176,31 @@ html body footer.ws-footer .ws-footer-status i {
     opacity: .07 !important;
   }
 }
+
+
+/* Prominenter watermerk links en krachtige typografie in de volledige footer. */
+html body footer.ws-footer::before {
+  left: 4% !important;
+  right: auto !important;
+  width: min(78vw, 1080px) !important;
+  height: 82% !important;
+  background-position: left center !important;
+  opacity: .16 !important;
+  transform: translateY(-50%) !important;
+}
+
+html body footer.ws-footer :is(p, a, span, strong) {
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 620px) {
+  html body footer.ws-footer::before {
+    left: -16% !important;
+    right: auto !important;
+    width: 138vw !important;
+    height: 66% !important;
+    background-position: left center !important;
+    opacity: .12 !important;
+  }
+}
