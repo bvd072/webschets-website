@@ -270,9 +270,9 @@
   padding: 0;
   border-radius: 0;
   background: transparent;
-  font-size: 10px;
+  font-size: var(--home-type-label, 11px) !important;
   font-weight: 600;
-  letter-spacing: 2.3px;
+  letter-spacing: var(--home-type-label-spacing, 1.32px) !important;
   line-height: 1.3;
 }
 
