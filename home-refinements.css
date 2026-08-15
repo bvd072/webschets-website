@@ -813,3 +813,11 @@ html body.home-page main#top > section.website-problems .problem-grid article h3
   font-size: 15px !important;
   font-weight: 700 !important;
 }
+
+
+/* Onderwerptitels: 16px semibold. */
+html body.home-page main#top > section.website-problems .problem-grid article h3,
+html body.home-page main#top > section.website-problems .problem-grid article h3 span {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
