@@ -593,3 +593,48 @@ body.home-page main#top > section.pricing > .shell {
   overflow: hidden !important;
   isolation: isolate !important;
 }
+
+
+/* Correctie: consistent ritme zonder iedere sectie in een kaart te veranderen. */
+body.home-page main#top > section.shell:not(.hero):not(.cta):not(.website-problems),
+body.home-page main#top > section.about-webschets > .shell,
+body.home-page main#top > section.pricing > .shell {
+  padding: clamp(44px, 4vw, 56px) 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  isolation: auto !important;
+}
+
+body.home-page main#top > section.about-webschets {
+  background:
+    radial-gradient(circle at 9% 32%, rgba(220,232,255,.61) 0, transparent 31%),
+    radial-gradient(circle at 91% 68%, rgba(234,223,255,.56) 0, transparent 30%) !important;
+}
+
+body.home-page main#top > section.website-problems {
+  padding: var(--home-section-pad) !important;
+  border: 1px solid rgba(255,255,255,.92) !important;
+  border-radius: var(--home-section-radius) !important;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(38,112,255,.17), transparent 33%),
+    radial-gradient(circle at 94% 100%, rgba(124,69,255,.17), transparent 38%),
+    linear-gradient(135deg, rgba(255,255,255,.78), rgba(247,249,255,.52)) !important;
+  box-shadow: var(--home-section-shadow) !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+}
+
+@media (max-width: 600px) {
+  body.home-page main#top > section.shell:not(.hero):not(.cta):not(.website-problems),
+  body.home-page main#top > section.about-webschets > .shell,
+  body.home-page main#top > section.pricing > .shell {
+    padding: 34px 0 !important;
+  }
+
+  body.home-page main#top > section.website-problems {
+    padding: 26px 20px !important;
+  }
+}
