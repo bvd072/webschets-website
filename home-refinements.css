@@ -878,3 +878,18 @@ body.home-page #over-ons .about-values h3 {
 body.home-page #over-ons .about-main h3 {
   color: #101d36 !important;
 }
+
+
+/* Navy in rust; wit op de bestaande blauwe hoverachtergrond. */
+body.home-page #over-ons .about-main h3,
+body.home-page #over-ons .about-values article h3 {
+  color: #101d36 !important;
+  transition: color .25s ease !important;
+}
+
+body.home-page #over-ons .about-main:hover h3,
+body.home-page #over-ons .about-main:focus-within h3,
+body.home-page #over-ons .about-values article:hover h3,
+body.home-page #over-ons .about-values article:focus-within h3 {
+  color: #ffffff !important;
+}
