@@ -309,3 +309,30 @@ html body .shared-site-header a.nav-cta:hover > .nav-cta-icon {
     font-size: 14px !important;
   }
 }
+
+
+/* Compacte header-CTA met een vrijstaand pijlicoon. */
+html body .shared-site-header a.nav-cta {
+  gap: 10px !important;
+  min-height: 43px !important;
+  padding: 4px 15px 4px 18px !important;
+}
+
+html body .shared-site-header a.nav-cta > .nav-cta-icon {
+  display: inline-grid !important;
+  width: 18px !important;
+  height: 18px !important;
+  flex: 0 0 18px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+html body .shared-site-header a.nav-cta > .nav-cta-icon svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+html body .shared-site-header a.nav-cta:hover > .nav-cta-icon {
+  background: transparent !important;
+}
