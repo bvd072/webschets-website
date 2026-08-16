@@ -912,3 +912,20 @@ body.home-page #werk .concept-showcase-meta {
   height: 38px !important;
   padding-top: 0 !important;
 }
+
+/* Eén doorlopende homepage-achtergrond: secties voegen geen harde kleurvlakken toe. */
+html body.home-page main#top > section {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Verwijder alleen het brede achtergrondpaneel van Over Webschets.
+   Inhoudskaarten en zachte, randloze decoratie blijven intact. */
+html body.home-page main#top > section.about-webschets::before {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
