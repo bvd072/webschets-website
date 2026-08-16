@@ -893,3 +893,22 @@ body.home-page #over-ons .about-values article:hover h3,
 body.home-page #over-ons .about-values article:focus-within h3 {
   color: #ffffff !important;
 }
+
+
+/* Zwaardere merkletter in het Over Webschets-blok. */
+body.home-page #over-ons .about-mark > span {
+  font-weight: 800 !important;
+}
+
+/* Compactere, verticaal gecentreerde tekststrook onder de conceptbeelden. */
+body.home-page #werk .concept-showcase-card {
+  padding-bottom: 10px !important;
+}
+
+body.home-page #werk .concept-showcase-meta {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 38px !important;
+  height: 38px !important;
+  padding-top: 0 !important;
+}
