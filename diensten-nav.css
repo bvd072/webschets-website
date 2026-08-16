@@ -1,4 +1,4 @@
-.service-page-links{margin-top:12px!important;padding:42px 0 54px!important;border:0!important;border-top:1px solid rgba(190,204,228,.46)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.service-page-links{margin-top:12px!important;padding:42px 0 54px!important;border:0!important;border-top:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
 .service-page-links-head{display:flex!important;align-items:flex-end!important;justify-content:space-between!important;gap:48px!important;margin-bottom:26px!important}
 .service-page-links-head>div{max-width:650px!important}
 .service-page-links-head .kicker{margin:0 0 10px!important;color:#3265f5!important;font-size:10px!important;font-weight:700!important;letter-spacing:.2em!important}
