@@ -175,3 +175,76 @@ html body main .cx-direction-board {
     grid-template-columns: 72px minmax(0, 1fr) !important;
   }
 }
+
+
+/* Specificiteitsvergrendeling tegen oudere pagina-afhankelijke !important-regels. */
+html body main :is(
+  .home-build-hosting-points.home-build-hosting-points.home-build-hosting-points > div > strong,
+  .home-branding-benefits.home-branding-benefits.home-branding-benefits > div > strong,
+  .service-detail-points.service-detail-points.service-detail-points > article > b,
+  .process-proof.process-proof.process-proof > span > b,
+  .process-payment-points.process-payment-points.process-payment-points > span > b,
+  .cx-feature-copy.cx-feature-copy.cx-feature-copy dt,
+  .cx-explainer-steps.cx-explainer-steps.cx-explainer-steps article > span
+) {
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: .12em !important;
+  color: #2864ff !important;
+  text-transform: uppercase !important;
+}
+
+html body main :is(
+  .home-build-hosting-points.home-build-hosting-points.home-build-hosting-points > div > span,
+  .home-branding-benefits.home-branding-benefits.home-branding-benefits > div > span,
+  .service-detail-points.service-detail-points.service-detail-points > article > span,
+  .process-proof.process-proof.process-proof > span > small,
+  .process-payment-points.process-payment-points.process-payment-points > span > small,
+  .cx-feature-copy.cx-feature-copy.cx-feature-copy dd,
+  .cx-explainer-steps.cx-explainer-steps.cx-explainer-steps article strong
+) {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  color: #263a58 !important;
+  text-transform: none !important;
+}
+
+html body main :is(
+  .home-build-hosting-points.home-build-hosting-points.home-build-hosting-points > div,
+  .home-branding-benefits.home-branding-benefits.home-branding-benefits > div,
+  .service-detail-points.service-detail-points.service-detail-points > article,
+  .process-proof.process-proof.process-proof > span,
+  .process-payment-points.process-payment-points.process-payment-points > span,
+  .cx-feature-copy.cx-feature-copy.cx-feature-copy dl > div,
+  .cx-explainer-steps.cx-explainer-steps.cx-explainer-steps > article
+) {
+  grid-template-columns: 78px minmax(0,1fr) !important;
+  gap: 14px !important;
+  padding: 0 0 0 17px !important;
+}
+
+html body main .form-proof.form-proof.form-proof > article,
+html body main .brand-v2-points.brand-v2-points.brand-v2-points > .brand-v2-point {
+  grid-template-columns: minmax(0,1fr) !important;
+  gap: 0 !important;
+  padding: 0 0 0 17px !important;
+}
+html body main .form-proof.form-proof.form-proof b,
+html body main .brand-v2-points.brand-v2-points.brand-v2-points .brand-v2-point strong {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  color: #263a58 !important;
+  text-transform: none !important;
+}
+html body main .form-proof.form-proof.form-proof small,
+html body main .brand-v2-points.brand-v2-points.brand-v2-points .brand-v2-point span {
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+  color: #8793a6 !important;
+}
