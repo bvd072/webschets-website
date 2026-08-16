@@ -152,3 +152,46 @@
 .host-care-table tbody tr:last-child .is-featured{border-bottom:1px solid #7350ff22}
 @media(max-width:950px){.host-care-table{min-width:720px}.host-care-compare{padding-bottom:88px}}
 @media(max-width:650px){.host-care-compare{padding-top:10px;padding-bottom:72px}.host-care-table-wrap{border-radius:23px}.host-care-table th,.host-care-table td{padding:13px 12px}}
+
+
+/* Hosting-hero: links en rechts exact dezelfde inhoudsverdeling. */
+@media (min-width: 901px) {
+  html body.hosting-page main > .hosting-service-intro .wd-service-intro-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: start !important;
+    gap: clamp(48px, 6vw, 76px) !important;
+  }
+  html body.hosting-page main > .hosting-service-intro .wd-service-intro-copy > h2 {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 2.2em !important;
+  }
+}
+html body.hosting-page main > .hosting-service-intro .wd-service-intro-copy {
+  min-width: 0 !important;
+}
+html body.hosting-page main > .hosting-service-intro .wd-service-explanation {
+  display: grid !important;
+  grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+}
+html body.hosting-page main > .hosting-service-intro .wd-service-explanation > p {
+  display: grid !important;
+  grid-template-columns: minmax(150px, .72fr) minmax(0, 1.28fr) !important;
+  align-items: start !important;
+  gap: 18px !important;
+  min-height: 68px !important;
+  margin: 0 !important;
+  padding: 11px 0 !important;
+}
+@media (max-width: 900px) {
+  html body.hosting-page main > .hosting-service-intro .wd-service-intro-copy {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  html body.hosting-page main > .hosting-service-intro .wd-service-explanation > p {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+    min-height: 0 !important;
+  }
+}
