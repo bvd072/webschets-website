@@ -603,3 +603,40 @@ html body.services-page main .services-conversion-copy h1 {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+
+/* Aanbod: drie gelijkwaardige kaarten naast elkaar op tablet en desktop. */
+@media (min-width: 761px) {
+  html body.services-page main .offer-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    align-items: stretch;
+  }
+  html body.services-page main .offer-card,
+  html body.services-page main .offer-card:first-child {
+    grid-column: auto !important;
+    min-width: 0;
+    min-height: 520px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1100px) {
+  html body.services-page main .offer-grid {
+    gap: 14px;
+  }
+  html body.services-page main .offer-card,
+  html body.services-page main .offer-card:first-child {
+    padding: 26px 22px;
+  }
+  html body.services-page main .offer-card h3 {
+    margin-top: 28px;
+    font-size: clamp(20px, 2.35vw, 27px) !important;
+  }
+  html body.services-page main .offer-description {
+    font-size: 14px !important;
+  }
+}
+
+/* De titel op de gradientkaart blijft contrastrijk wit. */
+html body.services-page main .offer-card.featured h3,
+html body.services-page main .offer-card.featured h3 :is(span, em, strong) {
+  color: #fff !important;
+}
