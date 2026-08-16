@@ -288,3 +288,47 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
     margin-top: 30px;
   }
 }
+
+
+/* Definitieve rustige proof-lijst: geen vakken, geen scheidingslijnen. */
+.cx-feature-copy dl {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 34px;
+}
+.cx-feature-copy dl div {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 14px;
+  padding: 0 0 0 17px;
+  border: 0;
+}
+.cx-feature-copy dl div::before {
+  top: 7px;
+  bottom: auto;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2864ff, #7137ff);
+  box-shadow: 0 0 0 5px rgba(40,100,255,.08);
+  opacity: 1;
+}
+.cx-feature-copy dt {
+  margin: 0;
+  white-space: nowrap;
+}
+.cx-feature-copy dd {
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media (max-width: 700px) {
+  .cx-feature-copy dl {
+    display: flex;
+    gap: 15px;
+  }
+  .cx-feature-copy dl div {
+    grid-template-columns: 72px minmax(0, 1fr);
+  }
+}
