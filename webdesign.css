@@ -647,3 +647,10 @@ html body.webdesign-page main .wd-service-intro-copy > h2,
 html body.webdesign-page main .wd-service-intro-copy > h2 :is(span, em, strong, b) {
   font-weight: 600 !important;
 }
+
+
+/* Definitieve dikte voor beide introductietitels. */
+html body.webdesign-page main .wd-service-intro-copy > h2,
+html body.webdesign-page main .wd-service-intro-copy > h2 :is(span, em, strong, b) {
+  font-weight: 500 !important;
+}
