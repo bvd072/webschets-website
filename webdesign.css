@@ -654,3 +654,17 @@ html body.webdesign-page main .wd-service-intro-copy > h2,
 html body.webdesign-page main .wd-service-intro-copy > h2 :is(span, em, strong, b) {
   font-weight: 500 !important;
 }
+
+
+/* Optisch gelijke dikte voor navy en blauwe tekst bij hetzelfde gewicht 500. */
+html body.webdesign-page main .wd-service-intro-copy > h2,
+html body.webdesign-page main .wd-service-intro-copy > h2 > span {
+  font-family: "Poppins", Arial, sans-serif !important;
+  font-weight: 500 !important;
+  font-synthesis: none !important;
+  font-variation-settings: "wght" 500 !important;
+}
+html body.webdesign-page main .wd-service-intro-copy > h2 > span {
+  -webkit-text-stroke: .18px currentColor;
+  paint-order: stroke fill;
+}
