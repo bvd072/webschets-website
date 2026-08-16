@@ -793,3 +793,17 @@ html body.webdesign-page main > .wd-service-intro .wd-service-intro-copy > h2 :i
     padding: 12px 0 !important;
   }
 }
+
+
+/* Webdesign en Development: beide introductietitels maximaal twee regels op desktop. */
+@media (min-width: 901px) {
+  html body.webdesign-page main > .wd-service-intro.service-two-line-hero .wd-service-intro-copy {
+    grid-template-rows: minmax(2.2em, auto) 1fr !important;
+  }
+  html body.webdesign-page main > .wd-service-intro.service-two-line-hero .wd-service-intro-copy > h2 {
+    min-height: 2.2em !important;
+    font-size: clamp(27px, 2.35vw, 34px) !important;
+    line-height: 1.1 !important;
+    text-wrap: balance !important;
+  }
+}
