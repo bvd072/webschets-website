@@ -640,3 +640,46 @@ html body.webdesign-page main > section + section {
     --service-section-space: 48px;
   }
 }
+
+
+/* Symmetrische hero-inhoud voor Webdesign, Development, Hosting en Branding. */
+@media (min-width: 901px) {
+  html body.webdesign-page main > .wd-service-intro .wd-service-intro-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: start !important;
+    gap: clamp(48px, 6vw, 76px) !important;
+  }
+  html body.webdesign-page main > .wd-service-intro .wd-service-intro-copy > h2 {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 2.2em !important;
+  }
+}
+html body.webdesign-page main > .wd-service-intro .wd-service-intro-copy {
+  min-width: 0 !important;
+}
+html body.webdesign-page main > .wd-service-intro .wd-service-explanation {
+  display: grid !important;
+  grid-template-rows: repeat(3, minmax(0, 1fr)) !important;
+}
+html body.webdesign-page main > .wd-service-intro .wd-service-explanation > p {
+  display: grid !important;
+  grid-template-columns: minmax(150px, .72fr) minmax(0, 1.28fr) !important;
+  align-items: start !important;
+  gap: 18px !important;
+  min-height: 68px !important;
+  margin: 0 !important;
+  padding: 11px 0 !important;
+}
+@media (max-width: 900px) {
+  html body.webdesign-page main > .wd-service-intro .wd-service-intro-copy {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  html body.webdesign-page main > .wd-service-intro .wd-service-explanation > p {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+    min-height: 0 !important;
+  }
+}
