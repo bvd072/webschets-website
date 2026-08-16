@@ -424,3 +424,32 @@ html body.services-page .faq-contact > span {
   line-height: 1.4 !important;
   letter-spacing: .08em !important;
 }
+
+
+/* Herstel oorspronkelijke compacte opmaak van de vier expertise-kaarten. */
+html body.services-page .service-page-links-grid > a {
+  min-height: 142px !important;
+  padding: 14px !important;
+  border-radius: 15px !important;
+}
+
+html body.services-page .service-page-links-grid > a > i {
+  width: 44px !important;
+  height: 44px !important;
+  margin-bottom: 9px !important;
+  border-radius: 13px !important;
+}
+
+html body.services-page .service-page-links-grid strong {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  letter-spacing: normal !important;
+}
+
+html body.services-page .service-page-links-grid em {
+  margin-top: 4px !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  text-align: center !important;
+}
