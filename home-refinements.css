@@ -950,3 +950,10 @@ body.home-page #werk .concept-showcase-meta {
     margin: 0 !important;
   }
 }
+
+
+@media (min-width: 901px) {
+  body.home-page main > section.hero {
+    grid-template-rows: 540px auto !important;
+  }
+}
