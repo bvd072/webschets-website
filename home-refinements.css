@@ -912,19 +912,3 @@ body.home-page #werk .concept-showcase-meta {
   height: 38px !important;
   padding-top: 0 !important;
 }
-
-
-/* Home-vertrouwensbalk gebruikt dezelfde vaste hero-offset als de hoofdpagina's. */
-@media (min-width: 901px) {
-  body.home-page main > section.hero {
-    position: relative !important;
-  }
-
-  body.home-page main > section.hero > .hero-trust-bar {
-    position: absolute !important;
-    top: 494.82px !important;
-    right: 0 !important;
-    bottom: auto !important;
-    left: 0 !important;
-  }
-}
