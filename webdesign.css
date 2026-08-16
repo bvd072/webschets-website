@@ -516,3 +516,45 @@
 .wd-final-cta p{color:rgba(255,255,255,.9)!important}
 .wd-final-cta .wd-button{color:#e75d49!important}
 .wd-final-cta .wd-button span{color:#fff!important;background:#ef6b54!important}
+
+
+/* Webdesign: duidelijke tweekoloms-hiërarchie en correct contrast op kleurvlakken. */
+@media (min-width: 761px) {
+  html body.wd-page main .wd-fit-heading {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr) !important;
+    align-items: end !important;
+    column-gap: 72px !important;
+  }
+  html body.wd-page main .wd-fit-heading .wd-eyebrow {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+  }
+  html body.wd-page main .wd-fit-heading > h2 {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    max-width: 650px !important;
+  }
+  html body.wd-page main .wd-fit-heading > p {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    max-width: 520px !important;
+  }
+}
+
+html body.wd-page main .wd-gradient-card h3,
+html body.wd-page main .wd-gradient-card h3 :is(span, em, strong) {
+  color: #fff !important;
+}
+
+html body.wd-page main .wd-compare .wd-section-heading h2,
+html body.wd-page main .wd-compare .wd-section-heading h2 :is(span, em, strong) {
+  color: #fff !important;
+}
+html body.wd-page main .wd-compare .wd-section-heading > p {
+  color: rgba(255,255,255,.9) !important;
+}
+
+html body.wd-page main .wd-final-cta h2,
+html body.wd-page main .wd-final-cta h2 :is(span, em, strong) {
+  color: #fff !important;
+}
