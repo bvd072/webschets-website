@@ -680,3 +680,9 @@ html body.services-page main .offer-card.featured h3 :is(span, em, strong) {
     padding: 22px 18px !important;
   }
 }
+
+
+/* FAQ-contactkaart: titel met voldoende contrast op de gradient. */
+html body.services-page main .faq-contact h3 {
+  color: #fff !important;
+}
