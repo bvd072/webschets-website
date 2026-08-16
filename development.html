@@ -56,6 +56,11 @@
       letter-spacing: 1.32px !important;
       text-transform: uppercase !important;
     }
+    @media (max-width: 900px) {
+      html body.development-page main .dev-four-line-title .dev-desktop-break {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 <body class="webdesign-page development-page" id="top">
@@ -85,7 +90,7 @@
           </div>
         </div>
         <div class="wd-service-intro-copy wd-service-intro-copy--second">
-          <h2>Een betrouwbare website waarin <span>ervaring en techniek</span> samenkomen.</h2>
+          <h2 class="dev-four-line-title">Een betrouwbare<br class="dev-desktop-break">website waarin<br class="dev-desktop-break"><span>ervaring en techniek</span><br class="dev-desktop-break">samenkomen.</h2>
           <div class="wd-service-explanation">
             <p><strong>Front-end & interactie.</strong><span>Vloeiende interfaces die logisch reageren en op elk scherm goed aanvoelen.</span></p>
             <p><strong>CMS & beheer.</strong><span>Een overzichtelijke beheeromgeving voor de content die jij zelf wilt aanpassen.</span></p>
