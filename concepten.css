@@ -214,3 +214,28 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
   margin: 0 0 14px !important;
   letter-spacing: 1.32px !important;
 }
+
+
+/* Realistische smartphoneverhouding in het uitgelichte automotive-concept. */
+.cx-feature-phone {
+  width: 25%;
+  height: auto;
+  aspect-ratio: 9 / 19.5;
+  right: -1%;
+  bottom: 1%;
+  box-sizing: border-box;
+}
+.cx-feature-phone img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+@media (max-width: 700px) {
+  .cx-feature-phone {
+    width: 29%;
+    height: auto;
+    aspect-ratio: 9 / 19.5;
+  }
+}
