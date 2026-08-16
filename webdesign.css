@@ -640,3 +640,10 @@ html body.webdesign-page main .wd-service-intro-copy > h2,
 html body.webdesign-page main .wd-service-intro-copy > h2 :is(span, em, strong, b) {
   font-weight: 400 !important;
 }
+
+
+/* Introductietitels: navy en blauw beide semibold. */
+html body.webdesign-page main .wd-service-intro-copy > h2,
+html body.webdesign-page main .wd-service-intro-copy > h2 :is(span, em, strong, b) {
+  font-weight: 600 !important;
+}
