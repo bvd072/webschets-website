@@ -1,5 +1,5 @@
-.development-page{background:#f7f9fc!important;color:#152944}.development-page main{overflow:hidden}.development-page .dev-service-intro{background:#f7f9fc!important}.dev-service-intro:before{display:none!important}
-.dev-service-intro h1{font-size:clamp(68px,7.8vw,108px)!important}.dev-service-intro h1 span,.dev-service-intro h2 span{color:#2864ff}.dev-service-intro .wd-service-intro-copy h2{font-size:clamp(29px,2.9vw,40px)}
+.development-page{background:#f7f9fc!important;color:#152944}.development-page main{overflow:hidden}
+
 .development-page h2 em{color:#2864ff;font-style:normal}.development-page p{color:#687890}
 
 .dev-principles{display:grid;grid-template-columns:.78fr 1.22fr;gap:90px;align-items:center;padding:115px 0}.dev-principles-copy h2,.dev-performance-copy h2,.dev-pipeline-heading h2,.dev-cms-copy h2,.dev-quality-heading h2,.dev-integrations h2,.dev-faq h2{margin:24px 0 20px;font-size:clamp(39px,4.5vw,61px);font-weight:600;line-height:1.04;letter-spacing:-.055em}.dev-principles-copy>p,.dev-performance-copy>p,.dev-pipeline-heading>p,.dev-cms-copy>p,.dev-quality-heading>p,.dev-integrations>div>p{font-size:13px;line-height:1.78}
@@ -19,11 +19,11 @@
 .development-page .dev-final-cta{background:radial-gradient(circle at 50% 115%,rgba(255,213,173,.75),transparent 42%),linear-gradient(135deg,#ff6658,#ff9368)!important}.development-page .dev-final-cta h2 em{color:#fff0e7!important}.development-page .dev-final-cta>span,.development-page .dev-final-cta p{color:rgba(255,255,255,.9)!important}
 
 @media(max-width:900px){.dev-principles,.dev-performance,.dev-cms,.dev-integrations,.dev-faq{grid-template-columns:1fr;gap:45px}.dev-principles,.dev-performance,.dev-cms,.dev-integrations{padding:80px 0}.dev-pipeline-heading,.dev-quality-heading{grid-template-columns:1fr;gap:25px}.dev-pipeline-track{grid-template-columns:1fr 1fr}.dev-pipeline-track:before{display:none}.dev-quality-grid{grid-template-columns:1fr 1fr}.dev-layer-stack article:nth-child(n){margin:0}.dev-orbit{min-height:420px}}
-@media(max-width:600px){.dev-service-intro h1{font-size:54px!important}.dev-pipeline{padding:75px 0}.dev-pipeline-track,.dev-quality-grid{grid-template-columns:1fr}.dev-pipeline-track article{min-height:0}.dev-cms-body{grid-template-columns:1fr}.dev-cms-body aside{flex-direction:row;overflow:auto;border-right:0;border-bottom:1px solid #e4eaf3}.dev-cms-points{grid-template-columns:1fr}.dev-metrics{grid-template-columns:1fr}.dev-score{align-items:flex-start;flex-direction:column}.dev-orbit{min-height:350px;transform:scale(.85)}.dev-faq{padding:60px 0 90px}}
+@media(max-width:600px){.dev-pipeline{padding:75px 0}.dev-pipeline-track,.dev-quality-grid{grid-template-columns:1fr}.dev-pipeline-track article{min-height:0}.dev-cms-body{grid-template-columns:1fr}.dev-cms-body aside{flex-direction:row;overflow:auto;border-right:0;border-bottom:1px solid #e4eaf3}.dev-cms-points{grid-template-columns:1fr}.dev-metrics{grid-template-columns:1fr}.dev-score{align-items:flex-start;flex-direction:column}.dev-orbit{min-height:350px;transform:scale(.85)}.dev-faq{padding:60px 0 90px}}
 
 
 .development-page{background:radial-gradient(circle at 9% 9%,rgba(40,100,255,.1),transparent 26%),radial-gradient(circle at 92% 20%,rgba(113,55,255,.08),transparent 27%),radial-gradient(circle at 82% 68%,rgba(66,128,255,.06),transparent 26%),#f7f9fc!important;background-repeat:no-repeat!important}
-.development-page main,.development-page .dev-service-intro,.development-page .dev-principles,.development-page .dev-performance,.development-page .dev-pipeline,.development-page .dev-cms,.development-page .dev-quality,.development-page .dev-integrations,.development-page .dev-faq{background:transparent!important}
+.development-page main,.development-page .dev-principles,.development-page .dev-performance,.development-page .dev-pipeline,.development-page .dev-cms,.development-page .dev-quality,.development-page .dev-integrations,.development-page .dev-faq{background:transparent!important}
 .dev-pipeline{color:#152944}
 .dev-pipeline .wd-eyebrow{color:#2164ff;background:#e5ecff}
 .dev-pipeline-heading h2{color:#152944}.dev-pipeline-heading h2 em{color:#2864ff}.dev-pipeline-heading>p{color:#687890}
@@ -33,7 +33,7 @@
 .dev-pipeline-track small{color:#6d7f99}.dev-pipeline-track h3{color:#20344f}.dev-pipeline-track p{color:#6b7b91}
 
 
-.development-page,.development-page main,.development-page .dev-service-intro,.development-page .dev-principles,.development-page .dev-performance,.development-page .dev-pipeline,.development-page .dev-cms,.development-page .dev-quality,.development-page .dev-integrations,.development-page .dev-faq{background:#f7f9fc!important;background-image:none!important}
+.development-page,.development-page main,.development-page .dev-principles,.development-page .dev-performance,.development-page .dev-pipeline,.development-page .dev-cms,.development-page .dev-quality,.development-page .dev-integrations,.development-page .dev-faq{background:#f7f9fc!important;background-image:none!important}
 
 
 .dev-performance-panel.dev-speed-visual{min-height:470px;padding:24px 26px;border:1px solid rgba(255,255,255,.92);border-radius:34px;background:radial-gradient(circle at 50% 48%,rgba(87,74,255,.12),transparent 34%),linear-gradient(145deg,rgba(255,255,255,.7),rgba(235,241,255,.48));box-shadow:0 34px 74px rgba(49,67,118,.13);backdrop-filter:blur(18px)}
@@ -149,44 +149,3 @@
 }
 
 
-/* Development-intro: beide tekstkolommen delen exact dezelfde titel-bovenlijn. */
-@media (min-width: 901px) {
-  html body.development-page .wd-service-intro-grid {
-    align-items: start !important;
-  }
-  html body.development-page .wd-service-intro-copy,
-  html body.development-page .wd-service-intro-copy--second {
-    position: relative !important;
-    padding-top: 0 !important;
-  }
-  html body.development-page .wd-service-intro-copy--second > .wd-column-label {
-    position: absolute !important;
-    right: auto !important;
-    bottom: auto !important;
-    left: 0 !important;
-    top: -34px !important;
-    display: block !important;
-    width: auto !important;
-    margin: 0 !important;
-    text-align: left !important;
-    justify-self: start !important;
-  }
-  html body.development-page .wd-service-intro-copy > h2 {
-    margin-top: 0 !important;
-  }
-}
-
-
-/* Development-intro: kolomlabel aan de uiterste linkerzijde van het volledige tekstblok. */
-@media (min-width: 901px) {
-  html body.development-page .wd-service-intro-grid {
-    position: relative !important;
-  }
-  html body.development-page .wd-service-intro-copy--second {
-    position: static !important;
-  }
-  html body.development-page .wd-service-intro-copy--second > .wd-column-label {
-    left: 0 !important;
-    top: -34px !important;
-  }
-}
