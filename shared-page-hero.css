@@ -667,3 +667,17 @@ html body main > section.unified-page-hero > .unified-trust-bar > div + div {
     line-height: .98 !important;
   }
 }
+
+
+@media (min-width: 901px) {
+  html body main#top#top > section.unified-page-hero .unified-hero-copy h1 {
+    font-size: clamp(40px, 3.7vw, 50px) !important;
+    line-height: .98 !important;
+  }
+
+  html body main#top#top > section.unified-page-hero .unified-hero-copy h1,
+  html body main#top#top > section.unified-page-hero .unified-hero-copy h1 > span,
+  html body main#top#top > section.unified-page-hero .unified-hero-copy h1 > em {
+    white-space: nowrap !important;
+  }
+}
