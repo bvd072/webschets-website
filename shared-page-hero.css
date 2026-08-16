@@ -650,13 +650,3 @@ html body main > section.unified-page-hero > .unified-trust-bar > div + div {
     min-height: 77.34px !important;
   }
 }
-
-
-/* Vertrouwensbalk: exact dezelfde desktoppositie als op de homehero. */
-@media (min-width: 901px) {
-  html body main > section.unified-page-hero .hero-trust-bar.unified-trust-bar {
-    top: 494.82px !important;
-    bottom: auto !important;
-    left: 0 !important;
-  }
-}
