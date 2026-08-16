@@ -658,3 +658,17 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
   display: block;
   font-weight: 600 !important;
 }
+
+
+/* Eén identieke hiërarchie voor alle driedelige proof-onderwerpen. */
+.cx-feature-copy dd,
+.cx-explainer-steps article strong {
+  color: #263a58 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+}
+.cx-explainer-steps article strong {
+  margin: 0;
+}
