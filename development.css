@@ -175,3 +175,18 @@
     margin-top: 0 !important;
   }
 }
+
+
+/* Development-intro: kolomlabel aan de uiterste linkerzijde van het volledige tekstblok. */
+@media (min-width: 901px) {
+  html body.development-page .wd-service-intro-grid {
+    position: relative !important;
+  }
+  html body.development-page .wd-service-intro-copy--second {
+    position: static !important;
+  }
+  html body.development-page .wd-service-intro-copy--second > .wd-column-label {
+    left: 0 !important;
+    top: -34px !important;
+  }
+}
