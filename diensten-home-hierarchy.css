@@ -564,3 +564,11 @@ html body.services-page footer.ws-footer {
     --services-section-pad: 34px;
   }
 }
+
+
+/* Sectie-animaties mogen het vaste verticale ritme niet verschuiven. */
+html body.services-page main > section.reveal,
+html body.services-page main > section.reveal.visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
