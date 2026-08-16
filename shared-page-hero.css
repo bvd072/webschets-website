@@ -682,3 +682,10 @@ html body main > section.unified-page-hero > .unified-trust-bar > div + div {
     margin: 0 !important;
   }
 }
+
+
+@media (min-width: 901px) {
+  html body main > section.unified-page-hero {
+    grid-template-rows: 540px auto !important;
+  }
+}
