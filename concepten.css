@@ -175,3 +175,34 @@ body.cx-page .cx-responsive{
 .cx-direction-outcome strong{font-weight:400}
 .cx-direction-outcome span{bottom:22px;font-weight:400}
 @media(max-width:700px){.cx-monitor-visual>img{width:111%}.cx-direction-row{padding:17px}.cx-direction-outcome{padding:22px 18px}}
+
+
+/* Sectielabels: dezelfde hiërarchie als op de homepage. */
+html body.cx-page main .cx-label {
+  display: inline-block !important;
+  min-height: 0 !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #2864ff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 1.32px !important;
+  text-transform: uppercase !important;
+  white-space: normal !important;
+  box-shadow: none !important;
+}
+
+html body.cx-page main .cx-final .cx-label {
+  color: rgba(255,255,255,.9) !important;
+}
+
+@media (max-width: 700px) {
+  html body.cx-page main .cx-label {
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+  }
+}
