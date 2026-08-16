@@ -681,3 +681,79 @@ html body.webdesign-page main .wd-service-intro-copy > h2 :is(em, strong, b) {
   -webkit-text-stroke: 0 !important;
   text-shadow: none !important;
 }
+
+
+/* Eén identieke hero-opbouw voor alle vier dienstsubpagina's. */
+html body.webdesign-page main > .wd-service-intro {
+  padding: 112px 0 78px !important;
+}
+html body.webdesign-page main > .wd-service-intro .wd-service-intro-top {
+  align-items: center !important;
+  min-height: 43px !important;
+  padding-bottom: 15px !important;
+}
+html body.webdesign-page main > .wd-service-intro > h1 {
+  margin: 18px 0 34px !important;
+  font-size: clamp(68px, 9vw, 112px) !important;
+  font-weight: 400 !important;
+  line-height: .88 !important;
+  letter-spacing: -.075em !important;
+}
+html body.webdesign-page main > .wd-service-intro > .service-intro-shared-label {
+  position: static !important;
+  display: block !important;
+  width: max-content !important;
+  min-height: 0 !important;
+  margin: 0 0 18px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #2864ff !important;
+  -webkit-text-fill-color: #2864ff !important;
+  font-family: Poppins, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  font-variation-settings: "wght" 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 1.32px !important;
+  text-align: left !important;
+  text-transform: uppercase !important;
+}
+html body.webdesign-page main > .wd-service-intro .wd-service-intro-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, .72fr) !important;
+  align-items: start !important;
+  gap: clamp(48px, 7vw, 90px) !important;
+}
+html body.webdesign-page main > .wd-service-intro .wd-service-intro-copy {
+  padding: 0 !important;
+}
+html body.webdesign-page main > .wd-service-intro .wd-service-intro-copy > h2 {
+  max-width: 650px !important;
+  margin: 0 0 17px !important;
+  font-size: clamp(28px, 2.65vw, 38px) !important;
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -.045em !important;
+}
+html body.webdesign-page main > .wd-service-intro .wd-service-intro-copy > h2 :is(span, em) {
+  font-weight: inherit !important;
+}
+@media (max-width: 900px) {
+  html body.webdesign-page main > .wd-service-intro {
+    padding: 102px 0 68px !important;
+  }
+  html body.webdesign-page main > .wd-service-intro .wd-service-intro-grid {
+    grid-template-columns: 1fr !important;
+    gap: 38px !important;
+  }
+}
+@media (max-width: 650px) {
+  html body.webdesign-page main > .wd-service-intro {
+    padding: 86px 0 54px !important;
+  }
+  html body.webdesign-page main > .wd-service-intro .wd-service-intro-copy > h2 {
+    font-size: 28px !important;
+  }
+}
