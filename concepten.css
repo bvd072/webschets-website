@@ -719,3 +719,21 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
   align-items: center;
   min-height: 28px;
 }
+
+
+/* Finale concept-CTA: maximaal contrast en een sobere pijl zonder bol. */
+html body.cx-page main .cx-final h2,
+html body.cx-page main .cx-final h2 em,
+html body.cx-page main .cx-final h2 span {
+  color: #fff !important;
+}
+html body.cx-page main .cx-final .cx-button-light > span {
+  width: auto !important;
+  height: auto !important;
+  margin-left: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: #111827 !important;
+}
