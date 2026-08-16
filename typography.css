@@ -11,3 +11,13 @@ select,
 textarea {
   font-family: 'Poppins', Arial, sans-serif !important;
 }
+
+/* Hero labels: typographic labels without a pill or card background. */
+html body main > section:first-child .hero-eyebrow,
+html body main > section:first-child .unified-hero-label,
+html body main > section:first-child .wd-eyebrow {
+  background: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
