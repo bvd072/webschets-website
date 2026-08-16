@@ -343,3 +343,143 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
   box-sizing: border-box;
   box-shadow: 0 0 0 5px rgba(40,100,255,.07);
 }
+
+
+/* Alle informatieve tabelrijen volgen dezelfde rustige proof-stijl als Automotive. */
+.cx-explainer-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 34px;
+}
+.cx-explainer-steps article,
+.cx-explainer-steps article:first-child {
+  position: relative;
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 0 0 0 17px;
+  border: 0;
+}
+.cx-explainer-steps article::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #4b6fff;
+  border-radius: 50%;
+  background: transparent;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 5px rgba(40,100,255,.07);
+}
+.cx-explainer-steps article > span {
+  padding-top: 2px;
+  color: #2864ff;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.cx-explainer-steps article strong {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.cx-explainer-steps article small {
+  margin-top: 4px;
+  line-height: 1.55;
+}
+
+.cx-direction-board {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+.cx-direction-head {
+  padding: 0 0 6px 17px;
+  border: 0;
+  background: transparent;
+}
+.cx-direction-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: 5px 14px;
+  align-items: start;
+  padding: 0 0 0 17px;
+  border: 0;
+}
+.cx-direction-row::before,
+.cx-direction-outcome::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  bottom: auto;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border: 2px solid #4b6fff;
+  border-radius: 50%;
+  background: transparent;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 5px rgba(40,100,255,.07);
+}
+.cx-direction-row > span {
+  padding-top: 2px;
+  font-size: 9px;
+  font-weight: 600;
+}
+.cx-direction-row strong {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+.cx-direction-row p {
+  grid-column: 2;
+  font-size: 10px;
+  line-height: 1.55;
+}
+.cx-direction-outcome {
+  position: relative;
+  padding: 0 0 0 17px;
+  border: 0;
+  background: transparent;
+}
+.cx-direction-outcome small {
+  font-size: 9px;
+  font-weight: 600;
+}
+.cx-direction-outcome strong {
+  margin-top: 7px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.cx-direction-outcome span {
+  position: static;
+  display: block;
+  margin-top: 9px;
+  font-size: 9px;
+}
+@media (max-width: 700px) {
+  .cx-explainer-steps article,
+  .cx-explainer-steps article:first-child,
+  .cx-direction-row {
+    grid-template-columns: 72px minmax(0, 1fr);
+  }
+  .cx-direction-board {
+    gap: 17px;
+  }
+  .cx-direction-outcome {
+    padding: 0 0 0 17px;
+  }
+}
