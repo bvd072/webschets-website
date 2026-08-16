@@ -369,3 +369,29 @@ html body.webdesign-page.webdesign-page.webdesign-page main > section :is(h1, h2
   -webkit-text-stroke: 0 !important;
   text-shadow: none !important;
 }
+
+
+/* Definitieve kopdikte voor de Concepten-pagina. */
+html body.concepts-page.concepts-page.concepts-page main > section h1,
+html body.concepts-page.concepts-page.concepts-page main > section h2,
+html body.concepts-page.concepts-page.concepts-page main > section h3,
+html body.concepts-page.concepts-page.concepts-page main > section h4,
+html body.concepts-page.concepts-page.concepts-page main > section h5,
+html body.concepts-page.concepts-page.concepts-page main > section h6,
+html body.concepts-page.concepts-page.concepts-page main > section :is(h1, h2, h3, h4, h5, h6) :is(span, em, strong, b) {
+  font-family: "Poppins", Arial, sans-serif !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-synthesis: none !important;
+  font-variation-settings: "wght" 500 !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+}
+
+/* De donkere titel in de afsluitende Concepten-CTA blijft volledig wit. */
+html body.concepts-page.concepts-page.concepts-page main > section.cx-final h2,
+html body.concepts-page.concepts-page.concepts-page main > section.cx-final h2 :is(span, em, strong, b) {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  background: none !important;
+}
