@@ -338,3 +338,11 @@ html body.services-page.services-page.services-page main .faq .faq-head .kicker 
     line-height: 1 !important;
   }
 }
+
+/* Grotere kaarttekst blijft volledig leesbaar en mag over twee regels lopen. */
+html body.services-page .service-page-links-grid > a em {
+  display: block !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+}
