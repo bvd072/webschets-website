@@ -265,3 +265,76 @@ html body.services-page.services-page main#top#top .faq-head .kicker {
     line-height: 1.03 !important;
   }
 }
+
+/* Werkelijke Diensten-DOM (main heeft geen id): definitieve hiërarchie. */
+html body.services-page.services-page.services-page main >
+section.services-overview-hero.services-overview-hero.unified-page-hero
+.services-hero-copy.unified-hero-copy > h1.unified-hero-title {
+  max-width: none !important;
+  margin: 27px 0 !important;
+  font-size: clamp(47.5px, 4.5vw, 60px) !important;
+  font-weight: 600 !important;
+  line-height: .98 !important;
+  letter-spacing: -.048em !important;
+}
+
+html body.services-page.services-page.services-page main >
+section.services-overview-hero.services-overview-hero
+.services-hero-copy > .unified-hero-label {
+  margin: 0 0 14px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 16.9px !important;
+  letter-spacing: 1.32px !important;
+}
+
+html body.services-page.services-page.services-page main >
+section.services-overview-hero.services-overview-hero
+.services-hero-copy > p.unified-hero-text {
+  max-width: 555px !important;
+  color: #71819a !important;
+  font-size: clamp(15px, 1.1vw, 18px) !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+
+html body.services-page.services-page.services-page main .service-page-links.service-page-links .service-page-links-head h2,
+html body.services-page.services-page.services-page main .services-offers.services-offers .offers-heading h2,
+html body.services-page.services-page.services-page main .service-grid.service-grid .service-grid-intro > h2,
+html body.services-page.services-page.services-page main .responsive-showcase.responsive-showcase .responsive-copy > h2,
+html body.services-page.services-page.services-page main .service-detail.service-detail .service-detail-copy > h2,
+html body.services-page.services-page.services-page main .route-explorer.route-explorer .route-explorer-head h2,
+html body.services-page.services-page.services-page main .standard-included.standard-included .standard-included-head > h2,
+html body.services-page.services-page.services-page main .faq.faq .faq-head h2,
+html body.services-page.services-page.services-page main > .cta.cta > h2 {
+  font-size: clamp(42px, 4.2vw, 56px) !important;
+  font-weight: 600 !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.05em !important;
+}
+
+html body.services-page.services-page.services-page main .service-page-links .service-page-links-head .kicker,
+html body.services-page.services-page.services-page main .services-offers .offers-heading .offers-kicker,
+html body.services-page.services-page.services-page main .service-grid .service-grid-intro > .kicker,
+html body.services-page.services-page.services-page main .responsive-showcase .responsive-copy > .kicker,
+html body.services-page.services-page.services-page main .service-detail .service-detail-copy > .kicker,
+html body.services-page.services-page.services-page main .route-explorer .route-explorer-head .kicker,
+html body.services-page.services-page.services-page main .standard-included .standard-included-head > .kicker,
+html body.services-page.services-page.services-page main .faq .faq-head .kicker {
+  margin: 0 0 14px !important;
+  color: #2864ff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 16.9px !important;
+  letter-spacing: 1.32px !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 600px) {
+  html body.services-page.services-page.services-page main >
+  section.services-overview-hero.services-overview-hero.unified-page-hero
+  .services-hero-copy.unified-hero-copy > h1.unified-hero-title {
+    font-size: 45.6px !important;
+    line-height: 1 !important;
+  }
+}
