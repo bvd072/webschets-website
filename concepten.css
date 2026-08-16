@@ -332,3 +332,14 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
     grid-template-columns: 72px minmax(0, 1fr);
   }
 }
+
+
+/* Holle accentringen voor de automotive proof-punten. */
+.cx-feature-copy dl div::before {
+  width: 7px;
+  height: 7px;
+  background: transparent;
+  border: 2px solid #4b6fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 5px rgba(40,100,255,.07);
+}
