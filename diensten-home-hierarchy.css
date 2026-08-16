@@ -595,3 +595,22 @@ html body.services-page main {
 html body.services-page.services-page main > section.cta.cta {
   margin-bottom: 0 !important;
 }
+
+
+/* Royamere, responsieve ademruimte tussen afsluitende CTA en footer. */
+html body.services-page main {
+  --services-footer-gap: 48px;
+  padding-bottom: var(--services-footer-gap) !important;
+}
+
+@media (max-width: 900px) {
+  html body.services-page main {
+    --services-footer-gap: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  html body.services-page main {
+    --services-footer-gap: 28px;
+  }
+}
