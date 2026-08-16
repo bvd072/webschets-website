@@ -751,3 +751,12 @@ html body.home-page main#top > section.hero.shell .hero-copy > p.hero-eyebrow {
   font-weight: 400 !important;
   line-height: 1.2 !important;
 }
+
+/* Match the homepage accent line to the gradient used by the other page heroes. */
+html body.home-page main#top > section.hero .hero-copy > h1 > span {
+  color: #2864ff !important;
+  background: linear-gradient(110deg, #2864ff 10%, #2864ff 52%, #7137ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
