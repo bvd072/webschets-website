@@ -928,3 +928,25 @@ body.home-page #werk .concept-showcase-meta {
     left: 0 !important;
   }
 }
+
+
+/* Desktop hero: vertrouwensbalk als tweede gridrij met echte witruimte. */
+@media (min-width: 901px) {
+  body.home-page main > section.hero {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-top: 24px !important;
+    padding-bottom: 32px !important;
+    grid-template-rows: minmax(520px, auto) auto !important;
+    row-gap: 32px !important;
+    align-content: start !important;
+  }
+
+  body.home-page main > section.hero > .hero-trust-bar {
+    position: static !important;
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
