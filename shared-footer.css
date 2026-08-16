@@ -286,3 +286,16 @@ html body footer.ws-footer::before {
     font-size: clamp(75px, 22vw, 123px) !important;
   }
 }
+
+
+/* Watermerk: nog 20% groter en extra ruimte tussen de letters. */
+html body footer.ws-footer::before {
+  font-size: clamp(108px, 13.86vw, 222px) !important;
+  letter-spacing: .015em !important;
+}
+
+@media (max-width: 620px) {
+  html body footer.ws-footer::before {
+    font-size: clamp(90px, 26.4vw, 148px) !important;
+  }
+}
