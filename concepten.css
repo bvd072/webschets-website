@@ -672,3 +672,20 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
 .cx-explainer-steps article strong {
   margin: 0;
 }
+
+
+/* Merk, Bezoeker en Actie volgen exact de labels van de Automotive-proof. */
+.cx-feature-copy dt,
+.cx-explainer-steps article > span {
+  margin: 0 !important;
+  padding: 0 !important;
+  align-self: center;
+  white-space: nowrap;
+  color: #2864ff !important;
+  font-family: Poppins, sans-serif !important;
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+}
