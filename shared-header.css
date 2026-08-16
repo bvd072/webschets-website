@@ -386,3 +386,33 @@ html body header#site-header.shared-site-header > a.nav-cta > .nav-cta-icon svg 
 html body header#site-header.shared-site-header > a.nav-cta:hover > .nav-cta-icon {
   background: transparent !important;
 }
+
+
+/* Glas-effect voor de vier dienstenkaarten in het uitklapmenu. */
+@media (min-width: 901px) {
+  html body header#site-header.shared-site-header .header-services-grid > a {
+    border: 1px solid rgba(255, 255, 255, .68) !important;
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, .42),
+      rgba(226, 235, 255, .25)
+    ) !important;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, .78),
+      0 10px 26px rgba(41, 61, 112, .08) !important;
+    -webkit-backdrop-filter: blur(18px) saturate(150%) !important;
+    backdrop-filter: blur(18px) saturate(150%) !important;
+  }
+
+  html body header#site-header.shared-site-header .header-services-grid > a:hover {
+    border-color: rgba(255, 255, 255, .88) !important;
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, .58),
+      rgba(225, 234, 255, .38)
+    ) !important;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, .92),
+      0 14px 30px rgba(41, 61, 112, .12) !important;
+  }
+}
