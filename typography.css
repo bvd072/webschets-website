@@ -270,3 +270,35 @@ html body.webdesign-page main .wd-service-intro-copy > h2 :is(span, em, strong, 
   -webkit-text-stroke: 0 !important;
   text-shadow: none !important;
 }
+
+
+/* Gedeeld verticaal ritme voor alle pagina's buiten de homepage. */
+html body:not(.home-page) {
+  --site-section-space: clamp(88px, 9vw, 120px);
+  --site-section-space-mobile: 72px;
+}
+html body:not(.home-page) main > section:not(:first-child) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+html body:not(.home-page) main > section:not(:first-child):not([class*="wrap"]) {
+  padding-top: var(--site-section-space) !important;
+  padding-bottom: var(--site-section-space) !important;
+}
+html body:not(.home-page) main > section[class*="wrap"] {
+  padding-top: var(--site-section-space) !important;
+  padding-bottom: var(--site-section-space) !important;
+}
+html body:not(.home-page) main > section:last-child {
+  margin-bottom: var(--site-section-space) !important;
+}
+@media (max-width: 700px) {
+  html body:not(.home-page) main > section:not(:first-child):not([class*="wrap"]),
+  html body:not(.home-page) main > section[class*="wrap"] {
+    padding-top: var(--site-section-space-mobile) !important;
+    padding-bottom: var(--site-section-space-mobile) !important;
+  }
+  html body:not(.home-page) main > section:last-child {
+    margin-bottom: var(--site-section-space-mobile) !important;
+  }
+}
