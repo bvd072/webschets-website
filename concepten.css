@@ -689,3 +689,25 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
   letter-spacing: .12em !important;
   text-transform: uppercase !important;
 }
+
+
+/* Automotive mockups: volledige pagina-inhoud zichtbaar binnen beide apparaten. */
+.cx-feature-browser > img {
+  display: block !important;
+  width: 100% !important;
+  height: calc(100% - 25px) !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  background: #fff !important;
+}
+.cx-feature-phone {
+  overflow: hidden !important;
+}
+.cx-feature-phone > img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  background: #fff !important;
+}
