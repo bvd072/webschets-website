@@ -636,3 +636,25 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
     margin-top: 15px;
   }
 }
+
+
+/* Conceptpunten: vettere titels en optisch gecentreerd op de holle markering. */
+.cx-explainer-steps article,
+.cx-explainer-steps article:first-child {
+  align-items: center;
+}
+.cx-explainer-steps article::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cx-explainer-steps article > span {
+  align-self: center;
+  padding-top: 0;
+}
+.cx-explainer-steps article > div {
+  align-self: center;
+}
+.cx-explainer-steps article strong {
+  display: block;
+  font-weight: 600 !important;
+}
