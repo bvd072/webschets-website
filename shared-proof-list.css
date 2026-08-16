@@ -248,3 +248,39 @@ html body main .brand-v2-points.brand-v2-points.brand-v2-points .brand-v2-point 
   line-height: 1.55 !important;
   color: #8793a6 !important;
 }
+
+
+/* Contact en Branding gebruiken dezelfde tweekoloms-hiërarchie als alle overige proof-lijsten. */
+html body main .form-proof.form-proof.form-proof > article,
+html body main .brand-v2-points.brand-v2-points.brand-v2-points > .brand-v2-point {
+  grid-template-columns: 78px minmax(0,1fr) !important;
+  gap: 14px !important;
+}
+html body main .form-proof.form-proof.form-proof b,
+html body main .brand-v2-points.brand-v2-points.brand-v2-points .brand-v2-point strong {
+  align-self: center !important;
+  white-space: nowrap !important;
+  color: #2864ff !important;
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+}
+html body main .form-proof.form-proof.form-proof small,
+html body main .brand-v2-points.brand-v2-points.brand-v2-points .brand-v2-point span {
+  align-self: center !important;
+  margin: 0 !important;
+  color: #263a58 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+@media (max-width:700px) {
+  html body main .form-proof.form-proof.form-proof > article,
+  html body main .brand-v2-points.brand-v2-points.brand-v2-points > .brand-v2-point {
+    grid-template-columns: 72px minmax(0,1fr) !important;
+  }
+}
