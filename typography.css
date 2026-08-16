@@ -249,3 +249,10 @@ body:not(.home-page) main :is(
     --site-type-label: 13px;
   }
 }
+
+
+/* Alle dienstsubpagina's: koppen consequent semibold. */
+html body.webdesign-page main :is(h1, h2, h3, h4, h5, h6),
+html body.webdesign-page main :is(h1, h2, h3, h4, h5, h6) :is(span, em, strong, b) {
+  font-weight: 600 !important;
+}
