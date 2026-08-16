@@ -585,3 +585,13 @@ section.services-overview-hero.services-overview-hero.unified-page-hero {
 html body.services-page.services-page main > section.cta.cta {
   margin-bottom: var(--services-section-gap) !important;
 }
+
+
+/* De ruimte vóór de footer hoort binnen dezelfde doorlopende main-achtergrond. */
+html body.services-page main {
+  padding-bottom: var(--services-section-gap) !important;
+}
+
+html body.services-page.services-page main > section.cta.cta {
+  margin-bottom: 0 !important;
+}
