@@ -929,3 +929,11 @@ html body.home-page main#top > section.about-webschets::before {
   border: 0 !important;
   box-shadow: none !important;
 }
+
+/* Definitieve hoge-specificiteitcorrectie voor de twee resterende sectievlakken. */
+html body.home-page main#top > section.about-webschets.about-webschets,
+html body.home-page main#top > section.cta.cta {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
