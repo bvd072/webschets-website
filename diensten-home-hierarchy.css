@@ -1,0 +1,185 @@
+/* Dienstenpagina afgestemd op de live typografische hiërarchie van de homepage. */
+body.services-page {
+  color: #0a0a0c;
+}
+
+/* Labels */
+html body.services-page main .unified-hero-label,
+html body.services-page main .kicker,
+html body.services-page main .offers-kicker,
+html body.services-page main .offer-label,
+html body.services-page main .cta > p:first-of-type {
+  margin-top: 0 !important;
+  margin-bottom: 14px !important;
+  color: #2864ff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 1.32px !important;
+  text-transform: uppercase !important;
+}
+
+/* Hero: dezelfde schaal, regelhoogte en rust als home, aangepast aan de langere titel. */
+html body.services-page main > .services-overview-hero.unified-page-hero {
+  grid-template-columns: minmax(0, 47%) minmax(0, 53%) !important;
+}
+
+html body.services-page main > .services-overview-hero .unified-hero-title {
+  max-width: none !important;
+  margin: 27px 0 !important;
+  font-size: clamp(47.5px, 4.5vw, 60px) !important;
+  font-weight: 600 !important;
+  line-height: .98 !important;
+  letter-spacing: -.048em !important;
+}
+
+html body.services-page main > .services-overview-hero .unified-hero-text {
+  max-width: 555px !important;
+  color: #71819a !important;
+  font-size: clamp(15px, 1.1vw, 18px) !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+
+html body.services-page main > .services-overview-hero .unified-hero-visual > img {
+  width: 112% !important;
+  max-width: none !important;
+  object-fit: contain !important;
+}
+
+/* Grote sectietitels */
+html body.services-page .service-page-links-head h2,
+html body.services-page .offers-heading h2,
+html body.services-page .service-grid-intro > h2,
+html body.services-page .responsive-copy > h2,
+html body.services-page .service-detail-copy > h2,
+html body.services-page .route-explorer-head h2,
+html body.services-page .standard-included-head > h2,
+html body.services-page .faq-head h2,
+html body.services-page main > .cta > h2 {
+  margin-top: 0 !important;
+  font-size: clamp(42px, 4.2vw, 56px) !important;
+  font-weight: 600 !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.05em !important;
+}
+
+/* Blauwe regels krijgen dezelfde blauw-violette accentwerking als home. */
+html body.services-page main h1 > span,
+html body.services-page .service-page-links-head h2 > span,
+html body.services-page .offers-heading h2 > span,
+html body.services-page .service-grid-intro > h2 > span,
+html body.services-page .responsive-copy > h2 > span,
+html body.services-page .service-detail-copy > h2 > span,
+html body.services-page .route-explorer-head h2 > span,
+html body.services-page .standard-included-head > h2 > span,
+html body.services-page .faq-head h2 > span,
+html body.services-page main > .cta > h2 > em {
+  color: #2864ff !important;
+  background: linear-gradient(110deg, #2864ff 10%, #2864ff 52%, #7137ff 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-style: normal !important;
+}
+
+/* Introductietekst */
+html body.services-page .service-page-links-head > p,
+html body.services-page .offers-heading > p,
+html body.services-page .service-grid-intro > p:last-child,
+html body.services-page .responsive-copy > p:last-of-type,
+html body.services-page .service-detail-copy > p:not(.kicker),
+html body.services-page .route-explorer-head > p,
+html body.services-page .standard-included-head > p:last-child,
+html body.services-page .faq-head > p {
+  color: #697187 !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+  letter-spacing: normal !important;
+}
+
+/* Kaartkoppen en ondersteunende tekst */
+html body.services-page .service-page-links-grid strong,
+html body.services-page .service-grid article > h2,
+html body.services-page .offer-card > h3,
+html body.services-page .route-option h3,
+html body.services-page .standard-included-grid h3 {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -.025em !important;
+}
+
+html body.services-page .service-page-links-grid em,
+html body.services-page .service-grid article > p,
+html body.services-page .offer-card .offer-description,
+html body.services-page .route-option p,
+html body.services-page .standard-included-grid p {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+}
+
+html body.services-page .service-page-links-grid > a {
+  min-height: 170px !important;
+}
+
+/* Knoppen */
+html body.services-page main .unified-hero-button,
+html body.services-page main .button,
+html body.services-page main .offer-link,
+html body.services-page main .service-detail-link {
+  min-height: 52px !important;
+  border-radius: 999px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+/* Beeldpresentatie */
+html body.services-page .responsive-showcase .device-stage img {
+  width: 112% !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 28px 42px rgba(36, 57, 99, .14)) !important;
+}
+
+@media (max-width: 900px) {
+  html body.services-page main > .services-overview-hero.unified-page-hero {
+    grid-template-columns: 1fr !important;
+  }
+
+  html body.services-page main > .services-overview-hero .unified-hero-visual > img,
+  html body.services-page .responsive-showcase .device-stage img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html body.services-page main > .services-overview-hero .unified-hero-title {
+    font-size: 45.6px !important;
+    line-height: 1 !important;
+    letter-spacing: -.045em !important;
+  }
+
+  html body.services-page .service-page-links-head h2,
+  html body.services-page .offers-heading h2,
+  html body.services-page .service-grid-intro > h2,
+  html body.services-page .responsive-copy > h2,
+  html body.services-page .service-detail-copy > h2,
+  html body.services-page .route-explorer-head h2,
+  html body.services-page .standard-included-head > h2,
+  html body.services-page .faq-head h2,
+  html body.services-page main > .cta > h2 {
+    font-size: clamp(38px, 10vw, 45.6px) !important;
+    line-height: 1.03 !important;
+  }
+
+  html body.services-page .service-page-links-grid strong,
+  html body.services-page .service-grid article > h2,
+  html body.services-page .offer-card > h3,
+  html body.services-page .route-option h3,
+  html body.services-page .standard-included-grid h3 {
+    font-size: 20px !important;
+  }
+}
