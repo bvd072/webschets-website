@@ -346,3 +346,81 @@ html body.services-page .service-page-links-grid > a em {
   white-space: normal !important;
   text-overflow: clip !important;
 }
+
+/* Leesbaarheid: geen inhoudelijke Diensten-copy meer op 11px of kleiner. */
+html body.services-page .responsive-copy > div > span {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+}
+
+html body.services-page .service-detail-points article > b {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+}
+
+html body.services-page .service-detail-points article > span {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+}
+
+html body.services-page .service-detail-visual > small {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+}
+
+html body.services-page .route-compass-core > small,
+html body.services-page .route-row > b,
+html body.services-page .route-row > div > span,
+html body.services-page .route-row > strong > small {
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+
+html body.services-page .route-row > div > span,
+html body.services-page .route-compass-core > small {
+  font-weight: 600 !important;
+  letter-spacing: .08em !important;
+}
+
+html body.services-page .route-assurance p,
+html body.services-page .route-assurance p > strong {
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+}
+
+html body.services-page .standard-card-head span {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+  letter-spacing: .08em !important;
+}
+
+html body.services-page .standard-included-grid li > b,
+html body.services-page .standard-note > b {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+}
+
+html body.services-page .standard-included-grid li > span,
+html body.services-page .standard-note > span {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+}
+
+html body.services-page .hosting-included > a {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+}
+
+html body.services-page .faq-contact > span {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  letter-spacing: .08em !important;
+}
