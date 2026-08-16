@@ -56,6 +56,13 @@
       letter-spacing: 1.32px !important;
       text-transform: uppercase !important;
     }
+    @media (min-width: 901px) {
+      html body.development-page main .dev-four-line-title {
+        max-width: none !important;
+        white-space: nowrap !important;
+        font-size: clamp(28px, 2.65vw, 38px) !important;
+      }
+    }
     @media (max-width: 900px) {
       html body.development-page main .dev-four-line-title .dev-desktop-break {
         display: none !important;
