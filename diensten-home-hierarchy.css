@@ -572,3 +572,10 @@ html body.services-page main > section.reveal.visible {
   opacity: 1 !important;
   transform: none !important;
 }
+
+
+/* Hero gebruikt exact dezelfde onderlinge sectieafstand. */
+html body.services-page.services-page.services-page main >
+section.services-overview-hero.services-overview-hero.unified-page-hero {
+  margin-bottom: var(--services-section-gap) !important;
+}
