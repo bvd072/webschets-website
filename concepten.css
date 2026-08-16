@@ -239,3 +239,52 @@ html body.cx-page.cx-page main > section.cx-hero.cx-hero
     aspect-ratio: 9 / 19.5;
   }
 }
+
+
+/* Premium proof-punten zonder tabelvakken of scheidingslijnen. */
+.cx-feature-copy dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin: 38px 0 0;
+}
+.cx-feature-copy dl div {
+  position: relative;
+  display: block;
+  min-width: 0;
+  padding: 2px 0 2px 15px;
+  border: 0;
+}
+.cx-feature-copy dl div::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  width: 2px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #2864ff, #7137ff);
+  opacity: .72;
+}
+.cx-feature-copy dt {
+  margin: 0 0 7px;
+  color: #2864ff;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: .12em;
+}
+.cx-feature-copy dd {
+  margin: 0;
+  color: #263a58;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+@media (max-width: 700px) {
+  .cx-feature-copy dl {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 30px;
+  }
+}
