@@ -594,3 +594,10 @@ html body.webdesign-page main .wd-final-cta h2,
 html body.webdesign-page main .wd-final-cta h2 * {
   color: #fff !important;
 }
+
+
+/* Alle Webdesign-koppen gebruiken consequent semibold in plaats van bold. */
+html body.webdesign-page main :is(h1, h2, h3, h4, h5, h6),
+html body.webdesign-page main :is(h1, h2, h3, h4, h5, h6) :is(span, em, strong, b) {
+  font-weight: 600 !important;
+}
