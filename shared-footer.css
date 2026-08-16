@@ -257,3 +257,32 @@ html body footer.ws-footer::before {
     transform: translateX(-48%) !important;
   }
 }
+
+
+/* Groter watermerk met ruimere letters en verticale vervaging. */
+html body footer.ws-footer::before {
+  font-size: clamp(90px, 11.55vw, 185px) !important;
+  letter-spacing: -.015em !important;
+  -webkit-mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(0, 0, 0, .28) 18%,
+    rgba(0, 0, 0, .70) 44%,
+    #000 78%,
+    #000 100%
+  ) !important;
+  mask-image: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(0, 0, 0, .28) 18%,
+    rgba(0, 0, 0, .70) 44%,
+    #000 78%,
+    #000 100%
+  ) !important;
+}
+
+@media (max-width: 620px) {
+  html body footer.ws-footer::before {
+    font-size: clamp(75px, 22vw, 123px) !important;
+  }
+}
