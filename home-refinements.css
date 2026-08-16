@@ -946,3 +946,14 @@ html body.home-page main#top > section.website-scan {
 html body.home-page footer.ws-footer {
   margin-top: 0 !important;
 }
+
+/* CTA opnieuw als zachte, transparante glass-card boven de doorlopende achtergrond. */
+html body.home-page main#top > section.cta.cta {
+  background:
+    radial-gradient(circle at 50% 115%, rgba(132, 103, 255, .16), transparent 46%),
+    linear-gradient(145deg, rgba(255, 255, 255, .52), rgba(229, 237, 255, .38) 52%, rgba(239, 230, 255, .42)) !important;
+  border: 1px solid rgba(255, 255, 255, .72) !important;
+  box-shadow: 0 24px 60px rgba(52, 70, 142, .09), inset 0 1px 0 rgba(255, 255, 255, .82) !important;
+  -webkit-backdrop-filter: blur(22px) saturate(125%) !important;
+  backdrop-filter: blur(22px) saturate(125%) !important;
+}
