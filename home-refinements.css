@@ -937,3 +937,12 @@ html body.home-page main#top > section.cta.cta {
   border: 0 !important;
   box-shadow: none !important;
 }
+
+/* Laat de laatste homesectie zonder witte tussenstrook op de footer aansluiten. */
+html body.home-page main#top > section.website-scan {
+  margin-bottom: 0 !important;
+}
+
+html body.home-page footer.ws-footer {
+  margin-top: 0 !important;
+}
