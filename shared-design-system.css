@@ -601,3 +601,42 @@ table {
     grid-template-columns: 72px minmax(0, 1fr) !important;
   }
 }
+
+
+/* Gedeeld verticaal sectieritme voor alle vier dienstsubpagina's. */
+html body.webdesign-page {
+  --service-section-space: clamp(64px, 7vw, 92px);
+}
+html body.webdesign-page main {
+  background: transparent !important;
+}
+html body.webdesign-page main > section:not(.wd-service-intro):not(.wd-final-cta):not(.brand-v2-cta) {
+  box-sizing: border-box !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: var(--service-section-space) !important;
+  padding-bottom: var(--service-section-space) !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+html body.webdesign-page main > .wd-final-cta {
+  margin-top: var(--service-section-space) !important;
+  margin-bottom: var(--service-section-space) !important;
+}
+html body.webdesign-page main > .brand-v2-cta {
+  margin-top: var(--service-section-space) !important;
+  margin-bottom: 0 !important;
+}
+html body.webdesign-page main > section + section {
+  background-clip: padding-box;
+}
+@media (max-width: 900px) {
+  html body.webdesign-page {
+    --service-section-space: clamp(52px, 9vw, 72px);
+  }
+}
+@media (max-width: 600px) {
+  html body.webdesign-page {
+    --service-section-space: 48px;
+  }
+}
