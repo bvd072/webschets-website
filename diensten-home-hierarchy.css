@@ -499,3 +499,68 @@ html body.services-page.services-page.services-page main
   font-size: 15px !important;
   line-height: 1.55 !important;
 }
+
+
+/* Doorlopend pagina-oppervlak en hetzelfde verticale ritme als de homepage. */
+html body.services-page {
+  background: #f7f8f7 !important;
+}
+
+html body.services-page main {
+  --services-section-gap: 24px;
+  --services-section-pad: 56px;
+  background:
+    radial-gradient(55% 17% at 9% 23%, rgb(223, 234, 255) 0, transparent 72%),
+    radial-gradient(50% 18% at 92% 36%, rgb(238, 228, 255) 0, transparent 72%),
+    radial-gradient(56% 19% at 8% 55%, rgb(226, 237, 255) 0, transparent 72%),
+    radial-gradient(52% 18% at 91% 69%, rgb(238, 229, 255) 0, transparent 72%),
+    radial-gradient(58% 18% at 12% 84%, rgb(228, 237, 255) 0, transparent 72%),
+    linear-gradient(#f7f8f7 0%, #f5f7fa 33%, #f7f8fb 62%, #f1f4f8 82%, #f4f4f1 100%) !important;
+}
+
+html body.services-page main > section {
+  box-sizing: border-box !important;
+  margin-top: 0 !important;
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+html body.services-page main > section:not(.services-overview-hero):not(.cta) {
+  margin-bottom: var(--services-section-gap) !important;
+  padding-top: var(--services-section-pad) !important;
+  padding-bottom: var(--services-section-pad) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+html body.services-page main > .services-overview-hero {
+  margin-bottom: var(--services-section-gap) !important;
+}
+
+html body.services-page main > .service-page-links {
+  margin-top: 0 !important;
+}
+
+html body.services-page main > .cta {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+html body.services-page footer.ws-footer {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 900px) {
+  html body.services-page main {
+    --services-section-gap: 18px;
+    --services-section-pad: 46px;
+  }
+}
+
+@media (max-width: 600px) {
+  html body.services-page main {
+    --services-section-gap: 14px;
+    --services-section-pad: 34px;
+  }
+}
