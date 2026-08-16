@@ -683,3 +683,15 @@ html body.webdesign-page main > .wd-service-intro .wd-service-explanation > p {
     min-height: 0 !important;
   }
 }
+
+
+/* Definitieve kopdikte op alle dienstsubpagina's: optisch semibold. */
+html body.webdesign-page main :is(h1, h2, h3, h4, h5, h6),
+html body.webdesign-page main :is(h1, h2, h3, h4, h5, h6) :is(span, em, strong, b) {
+  font-family: "Poppins", Arial, sans-serif !important;
+  font-weight: 500 !important;
+  font-synthesis: none !important;
+  font-variation-settings: "wght" 500 !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none;
+}
