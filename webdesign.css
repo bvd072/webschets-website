@@ -601,3 +601,42 @@ html body.webdesign-page main :is(h1, h2, h3, h4, h5, h6),
 html body.webdesign-page main :is(h1, h2, h3, h4, h5, h6) :is(span, em, strong, b) {
   font-weight: 600 !important;
 }
+
+
+/* Contrast en compacte hoogte voor de gekleurde Webdesign-secties. */
+html body.webdesign-page main .wd-compare {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  min-height: 0 !important;
+}
+html body.webdesign-page main .wd-compare > .shell {
+  min-height: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+html body.webdesign-page main .wd-compare .wd-section-heading {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+html body.webdesign-page main .wd-compare .wd-section-heading > .wd-eyebrow {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+html body.webdesign-page main .wd-compare .wd-section-heading h2,
+html body.webdesign-page main .wd-compare .wd-section-heading h2 *,
+html body.webdesign-page main .wd-final-cta h2,
+html body.webdesign-page main .wd-final-cta h2 * {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  background-image: none !important;
+}
+html body.webdesign-page main .wd-compare .wd-section-heading > p {
+  color: rgba(255,255,255,.92) !important;
+  -webkit-text-fill-color: rgba(255,255,255,.92) !important;
+}
+
+/* De twee grote introductiezinnen zijn ondersteunend en daarom regular. */
+html body.webdesign-page main .wd-service-intro-copy > h2,
+html body.webdesign-page main .wd-service-intro-copy > h2 :is(span, em, strong, b) {
+  font-weight: 400 !important;
+}
