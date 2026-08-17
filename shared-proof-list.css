@@ -695,3 +695,85 @@ html body.webdesign-page.process-page.process-page.process-page main > section.p
   padding: 0 !important;
   padding-block: 0 !important;
 }
+
+
+/* Werkwijze: Home-spacing en één doorlopende achtergrond. */
+html body.webdesign-page.process-page.process-page {
+  background: #f7f8f7 !important;
+}
+
+html body.webdesign-page.process-page.process-page main {
+  --process-section-gap: 24px;
+  --process-section-space: clamp(40px, 4.3vw, 52px);
+  background:
+    radial-gradient(55% 17% at 9% 23%, #dfeaff 0, transparent 72%),
+    radial-gradient(50% 18% at 92% 36%, #eee4ff 0, transparent 72%),
+    radial-gradient(56% 19% at 8% 55%, #e2edff 0, transparent 72%),
+    radial-gradient(52% 18% at 91% 69%, #eee5ff 0, transparent 72%),
+    radial-gradient(58% 18% at 12% 84%, #e4edff 0, transparent 72%),
+    linear-gradient(#f7f8f7 0%, #f5f7fa 33%, #f7f8fb 62%, #f1f4f8 82%, #f4f4f1 100%) !important;
+}
+
+html body.webdesign-page.process-page.process-page main > section {
+  box-sizing: border-box !important;
+  margin-top: 0 !important;
+  margin-bottom: var(--process-section-gap) !important;
+}
+
+html body.webdesign-page.process-page.process-page main > :is(
+  .process-hero,
+  .process-payment,
+  .process-overview,
+  .process-route-feature,
+  .process-phase,
+  .launch-section,
+  .support-section,
+  .wd-faq
+) {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+html body.webdesign-page.process-page.process-page main > :is(
+  .process-overview,
+  .process-route-feature,
+  .process-phase,
+  .launch-section,
+  .support-section,
+  .wd-faq
+) {
+  padding-top: var(--process-section-space) !important;
+  padding-bottom: var(--process-section-space) !important;
+}
+
+html body.webdesign-page.process-page.process-page main > section.process-payment.process-payment {
+  margin-bottom: var(--process-section-gap) !important;
+}
+
+html body.webdesign-page.process-page.process-page main > section.process-design.process-design {
+  margin-bottom: var(--process-section-gap) !important;
+}
+
+html body.webdesign-page.process-page.process-page main > section.wd-final-cta.process-final-cta {
+  margin-top: 0 !important;
+  margin-bottom: var(--process-section-gap) !important;
+}
+
+html body.webdesign-page.process-page.process-page .ws-footer,
+html body.webdesign-page.process-page.process-page > footer {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 900px) {
+  html body.webdesign-page.process-page.process-page main {
+    --process-section-gap: 18px;
+    --process-section-space: clamp(32px, 6vw, 46px);
+  }
+}
+
+@media (max-width: 600px) {
+  html body.webdesign-page.process-page.process-page main {
+    --process-section-gap: 14px;
+    --process-section-space: 26px;
+  }
+}
