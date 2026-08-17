@@ -812,3 +812,14 @@ html body.webdesign-page.process-page.process-page.process-page.process-page mai
 html body.webdesign-page.process-page.process-page.process-page.process-page main > section.wd-final-cta.process-final-cta {
   margin-bottom: var(--process-section-gap) !important;
 }
+
+
+/* Werkwijze routeblok: ID-regel neutraliseren. */
+html body.webdesign-page.process-page main > section#route.process-route-feature {
+  margin-top: 0 !important;
+  margin-bottom: var(--process-section-gap) !important;
+  padding-top: var(--process-section-space) !important;
+  padding-bottom: var(--process-section-space) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
