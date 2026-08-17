@@ -688,3 +688,10 @@ html body.process-page.process-page .process-design .design-studio > aside .stud
 html body.process-page.process-page .support-section > .process-heading {
   border-bottom: 0 !important;
 }
+
+
+/* Specificiteitsvergrendeling tegen de oudere algemene sectiepadding. */
+html body.webdesign-page.process-page.process-page.process-page main > section.process-design.process-design.process-design {
+  padding: 0 !important;
+  padding-block: 0 !important;
+}
