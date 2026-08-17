@@ -823,3 +823,11 @@ html body.webdesign-page.process-page main > section#route.process-route-feature
   background-color: transparent !important;
   background-image: none !important;
 }
+
+
+/* Werkwijze routeblok: dubbele ID-specificiteit definitief overschrijven. */
+html body#top.webdesign-page.process-page.process-page main > section#route.process-route-feature {
+  margin: 0 0 var(--process-section-gap) !important;
+  padding: var(--process-section-space) 0 !important;
+  background: transparent !important;
+}
