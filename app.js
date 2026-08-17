@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
   route.innerHTML = `
     <div class="shell process-route-feature-grid">
       <figure class="process-route-feature-visual">
-        <img src="assets/werkwijze-hero-process.png?v=1" alt="Visueel overzicht van de samenwerking met Webschets, van kennismaking tot livegang" width="1536" height="1024" loading="lazy" decoding="async">
+        <img src="assets/werkwijze-route-process-v2.webp?v=1" alt="3D procesvisual van het eerste gesprek via strategie en ontwerp naar de livegang" width="1536" height="1024" loading="lazy" decoding="async">
       </figure>
       <div class="process-route-feature-copy">
         <span class="wd-eyebrow">Onze werkwijze</span>
