@@ -395,3 +395,49 @@ html body.concepts-page.concepts-page.concepts-page main > section.cx-final h2 :
   -webkit-text-fill-color: #fff !important;
   background: none !important;
 }
+
+
+/* Consistente verticale sectiespacing voor de Concepten-pagina. */
+html body.concepts-page.concepts-page main {
+  --concept-section-gap: 24px;
+  --concept-section-space: clamp(46px, 5vw, 64px);
+}
+
+html body.concepts-page.concepts-page main > section {
+  box-sizing: border-box !important;
+  margin-top: 0 !important;
+  margin-bottom: var(--concept-section-gap) !important;
+}
+
+html body.concepts-page.concepts-page main > section.cx-sector,
+html body.concepts-page.concepts-page main > section.cx-feature-wrap,
+html body.concepts-page.concepts-page main > section.cx-gallery,
+html body.concepts-page.concepts-page main > section.cx-monitor-showcase,
+html body.concepts-page.concepts-page main > section.cx-method-wrap {
+  padding-top: var(--concept-section-space) !important;
+  padding-bottom: var(--concept-section-space) !important;
+}
+
+html body.concepts-page.concepts-page main > section.cx-final {
+  margin-top: 0 !important;
+  margin-bottom: var(--concept-section-gap) !important;
+  padding: var(--concept-section-space) !important;
+}
+
+html body.concepts-page.concepts-page .ws-footer {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 900px) {
+  html body.concepts-page.concepts-page main {
+    --concept-section-gap: 18px;
+    --concept-section-space: clamp(32px, 6vw, 46px);
+  }
+}
+
+@media (max-width: 600px) {
+  html body.concepts-page.concepts-page main {
+    --concept-section-gap: 14px;
+    --concept-section-space: 26px;
+  }
+}
