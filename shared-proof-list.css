@@ -520,3 +520,31 @@ html body.process-page.process-page .process-payment-points {
     margin-top: 18px !important;
   }
 }
+
+
+/* Betalingsregels blijven horizontaal leesbaar. */
+html body.webdesign-page.process-page.process-page.process-page .process-payment-points.process-payment-points > span {
+  display: grid !important;
+  grid-template-columns: 140px minmax(0, 1fr) !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+html body.webdesign-page.process-page.process-page.process-page .process-payment-points.process-payment-points > span > b {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: auto !important;
+}
+
+html body.webdesign-page.process-page.process-page.process-page .process-payment-points.process-payment-points > span > small {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  width: auto !important;
+}
+
+@media (max-width: 520px) {
+  html body.webdesign-page.process-page.process-page.process-page .process-payment-points.process-payment-points > span {
+    grid-template-columns: 76px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+}
