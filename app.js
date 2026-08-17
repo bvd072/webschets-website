@@ -105,8 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="process-route-feature-copy">
         <span class="wd-eyebrow">Onze werkwijze</span>
         <h2 id="route-title">Van eerste gesprek.<br><em>Tot sterke livegang.</em></h2>
-        <p>We houden het traject overzichtelijk en persoonlijk. Eerst brengen we jouw doelen, doelgroep en inhoud scherp in beeld. Daarna bepalen we de structuur en vertalen we die naar een webschets die je direct kunt beoordelen.</p>
-        <p>Na jouw feedback bouwen we de website responsive uit, controleren we techniek en inhoud en begeleiden we de livegang. Je weet steeds wat de volgende stap is, wat we van jou nodig hebben en wat je van ons ontvangt.</p>
+        <p>Van eerste gesprek tot livegang houden we doelen, ontwerp, feedback en techniek in één duidelijke route. Je weet steeds wat de volgende stap is en wat je van ons ontvangt.</p>
         <div class="process-route-feature-points">
           <span><b>01–03</b><small>Kennismaking · strategie · webschets</small></span>
           <span><b>04–07</b><small>Feedback · bouw · livegang · support</small></span>
