@@ -596,3 +596,65 @@ html body.process-page.process-page.process-page main span.wd-eyebrow.wd-eyebrow
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+
+
+/* Werkwijze Fase 02: één samenhangende transparante 3D-visual. */
+html body.process-page .process-strategy-visual {
+  display: grid !important;
+  place-items: center !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+html body.process-page .process-strategy-visual img {
+  display: block !important;
+  width: min(100%, 820px) !important;
+  height: auto !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 28px 42px rgba(38, 68, 140, .18)) !important;
+}
+
+/* Werkwijze Fase 03/04: heldere Webschets-gradient met witte inhoud. */
+html body.process-page .process-design {
+  color: #fff !important;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(255,255,255,.16), transparent 34%),
+    radial-gradient(circle at 88% 84%, rgba(255,255,255,.10), transparent 31%),
+    linear-gradient(135deg, #2864ff 0%, #465cf8 48%, #7040f2 100%) !important;
+}
+html body.process-page .process-design .process-heading-light .wd-eyebrow,
+html body.process-page .process-design .process-heading-light h2,
+html body.process-page .process-design .process-heading-light h2 em,
+html body.process-page .process-design .process-heading-light > p {
+  color: #fff !important;
+}
+html body.process-page .process-design .process-heading-light > p {
+  opacity: .9 !important;
+}
+html body.process-page .process-design .browser-frame,
+html body.process-page .process-design .design-studio aside {
+  color: #fff !important;
+  border-color: rgba(255,255,255,.28) !important;
+  background: rgba(255,255,255,.11) !important;
+  box-shadow: 0 28px 68px rgba(27, 32, 112, .25) !important;
+  backdrop-filter: blur(18px) !important;
+}
+html body.process-page .process-design .studio-status small,
+html body.process-page .process-design .studio-status b,
+html body.process-page .process-design .design-studio aside article small,
+html body.process-page .process-design .design-studio aside article p,
+html body.process-page .process-design .design-studio aside article b,
+html body.process-page .process-design .studio-score,
+html body.process-page .process-design .studio-score strong {
+  color: #fff !important;
+}
+html body.process-page .process-design .design-studio aside article,
+html body.process-page .process-design .studio-status {
+  border-color: rgba(255,255,255,.22) !important;
+  background: rgba(255,255,255,.09) !important;
+}
+
+@media (max-width: 820px) {
+  html body.process-page .process-strategy-visual img {
+    width: min(100%, 680px) !important;
+  }
+}
