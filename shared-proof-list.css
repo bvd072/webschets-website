@@ -444,7 +444,7 @@ html body.concepts-page.concepts-page .ws-footer {
 
 
 /* Compacte betalingssectie op de Werkwijze-pagina. */
-html body.process-page.process-page main > section.process-payment {
+html body.webdesign-page.process-page.process-page.process-page main > section.process-payment.process-payment {
   margin: 0 !important;
   padding: 0 !important;
   background: transparent !important;
