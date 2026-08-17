@@ -658,3 +658,10 @@ html body.process-page .process-design .studio-status {
     width: min(100%, 680px) !important;
   }
 }
+
+
+/* Definitieve kleurvergrendeling: op de gekleurde Fase 03/04-sectie is ook het label wit. */
+html body.process-page.process-page.process-page main > section.process-design.process-design span.wd-eyebrow.wd-eyebrow {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
