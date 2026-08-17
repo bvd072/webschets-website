@@ -576,3 +576,23 @@ html body.process-page.process-page #route .process-route-feature-copy > p {
   max-width: 36rem !important;
   margin: 0 !important;
 }
+
+
+/* Ook het hero-label gebruikt exact hetzelfde Home-labeltoken. */
+html body.process-page.process-page.process-page main span.wd-eyebrow.wd-eyebrow {
+  display: block !important;
+  width: fit-content !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+  color: #2864ff !important;
+  font-family: Poppins, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 1.32px !important;
+  text-transform: uppercase !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
