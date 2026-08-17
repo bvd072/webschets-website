@@ -665,3 +665,26 @@ html body.process-page.process-page.process-page main > section.process-design.p
   color: #fff !important;
   -webkit-text-fill-color: #fff !important;
 }
+
+
+/* Werkwijze verfijning: compact ontwerpblok, transparant feedbackpaneel en geen lijn bij Fase 07. */
+html body.process-page.process-page main > section.process-design.process-design {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+html body.process-page.process-page main > section.process-design.process-design > .shell {
+  padding-top: clamp(48px, 5vw, 64px) !important;
+  padding-bottom: clamp(48px, 5vw, 64px) !important;
+}
+html body.process-page.process-page .process-design .design-studio > aside,
+html body.process-page.process-page .process-design .design-studio > aside .studio-status,
+html body.process-page.process-page .process-design .design-studio > aside article,
+html body.process-page.process-page .process-design .design-studio > aside .studio-score {
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+html body.process-page.process-page .support-section > .process-heading {
+  border-bottom: 0 !important;
+}
