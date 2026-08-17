@@ -548,3 +548,31 @@ html body.webdesign-page.process-page.process-page.process-page .process-payment
     gap: 10px !important;
   }
 }
+
+
+/* Werkwijze: alle labels boven sectietitels volgen exact de Home-hiërarchie. */
+html body.process-page.process-page main .wd-eyebrow {
+  display: block !important;
+  width: fit-content !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #2864ff !important;
+  font-family: Poppins, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  line-height: 1.3 !important;
+  letter-spacing: 1.32px !important;
+  text-transform: uppercase !important;
+  text-align: left !important;
+}
+
+/* De compacte route-intro vormt één rustig tekstblok. */
+html body.process-page.process-page #route .process-route-feature-copy > p {
+  max-width: 36rem !important;
+  margin: 0 !important;
+}
